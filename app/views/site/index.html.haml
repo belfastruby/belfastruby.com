@@ -1,0 +1,72 @@
+%div#content
+  %div.col.one
+    %section.section
+      %h1 Meetups
+      %p Our meetups are open to all experience levels, from total novices to expert Rubyists.
+
+      .vevent
+        %h2.summary BR-1: Making the Jump to Ruby
+
+        %h3.when-icon.icon When?
+        %p
+          %span.dtstart
+            %abbr.value{ :title => "2012-01-31" }31st January 2012,
+            %span.value 6:30pm
+
+        %h3.where-icon.icon
+          Where? (
+          %a.get-directions{ :href => "http://maps.google.co.uk/maps?q=rumble+labs+belfast&hl=en&ll=54.592891,-5.929399&spn=0.010592,0.026436&hq=rumble+labs&hnear=Belfast,+United+Kingdom&t=m&z=16&vpsrc=0", :title => "Show me the way to Rumble Labs"} Get Directions
+          )
+        %p.location
+          The Rumble Laboratory
+          %br
+          21 Ormeau Avenue, Belfast, BT2 8HD
+
+        %h3.what-icon.icon What?
+        %p.description The first Belfast Ruby event will broach the topic of "Making the Jump to Ruby". It’s never an easy decision for a developer to change languages but most who move to Ruby and Rails never look back!
+        %p.description This first meetup is a chance to talk to experienced Ruby developers and recent migrants about the differences between languages and their cultures, what makes Ruby so great, and how to get started.
+        %p.description We'll have beer and pizza, but space will be limited in The Rumble Laboratory.
+        %a.url.cta{:href=> "http://digitalcircle.org/events/making-the-jump-to-ruby"} Attend Meetup >
+  .col.two
+    %section.section
+      %h1 Training
+      %p Are you interested in learning Ruby? There are currently no teaching courses available in Northern Ireland for Ruby and Rails. If enough interest is shown Belfast Ruby will help organise a training course.
+
+      %h3#interest_message Declare your interest in Ruby training
+      .email-form-wrapper
+        = form_for :interested_user, :url => '/interested_users', :method => :post, :remote => true do |f|
+          = f.text_field :email, :class => "email-field", :placeholder => "Your email address"
+          = f.submit 'SUBMIT', :class => "submit-button", :src => "assets/submit-btn.png", :type => "image"
+
+    %section.section
+      %h1 Elsewhere
+      %ul.social-list
+        %li.icon.twitter-icon
+          Follow
+          %a{ :href => "https://twitter.com/belfastruby", :title => "Belfast Ruby on Twitter"} @belfastruby
+          on twitter
+        %li.icon.github-icon
+          %a{ :href => "https://github.com/belfastruby", :title => "Belfast Ruby on Github"} belfastruby
+          on github
+        %li.icon.group-icon
+          %a{ :href => "http://groups.google.com/group/belfastruby", :title => "Belfast Ruby Google Group"} Google Group
+        %li.icon.irc-icon
+          %a{:href => "irc://irc.freenode.net/##belfastruby", :title => "Belfast Ruby IRC Channel"} ##belfastruby
+          IRC channel
+        -# %li.icon.meetup-icon
+          -# %a{ :href => "https://github.com/belfastruby", :title => "Belfast Ruby Meetup Profile"} Meetup.com
+          -# Profile
+
+
+
+%aside#sidebar
+  %ul.sponsors
+    %li.sponsor
+      %a{ :href => "http://rumblelabs.com", :title => "Rumble Labs"}
+        %span.sponsor-tag Sponsor
+        = image_tag "rumble-labs-logo.png", :alt => "Rumble Labs", :class => "sponsor-logo"
+    %li.sponsor
+      %a{ :href => "http://airpointofsale.com/", :title => "Airpos"}
+        %span.sponsor-tag Sponsor
+        = image_tag "airpos-logo.png", :alt => "Airpos", :class => "sponsor-logo"
+
