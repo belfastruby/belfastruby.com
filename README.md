@@ -35,3 +35,4 @@ To get started with the application locally, you'll need Ruby 1.9.2 (using RVM)
     [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
     rvm install 1.9.2
     rvm use 1.9.2 --default
+
