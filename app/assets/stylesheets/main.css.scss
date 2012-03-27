@@ -71,11 +71,6 @@ body {
 /* Sponsors */
 
 
-.sponsors {
-  h3 {
-    padding: 0 0 3px; 
-  }
-}
 .sponsor {
   display: block;
   background-color: #fff;
@@ -275,8 +270,11 @@ body {
    }
 
    .sponsors {
-     margin-top:60px;
+     margin-top:32px;
      margin-left: 20px;
+     h3 {
+       padding: 0 0 5px; 
+     }
    }
 
    .sponsor {
