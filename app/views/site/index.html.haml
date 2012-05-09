@@ -10,7 +10,9 @@
         %h3.when-icon.icon When?
         %p
           %span.dtstart
-            %abbr.value{ :title => "2012-04-22" }22th May 2012,
+            - date_string = '2012-05-22'
+            - date = Date.parse date_string
+            %abbr.value{ :title => "#{date_string}" } #{date.strftime("#{date.day.ordinalize} %B, %Y")}
             %span.value 6:30pm
 
         %h3.where-icon.icon
