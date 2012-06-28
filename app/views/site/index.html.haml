@@ -5,49 +5,43 @@
       %p Our meetups are open to all experience levels, from total novices to expert Rubyists.
 
       .vevent
-        %h2.summary BR-3: Testing Ruby and Rails
+        %h2.summary BR-4: An Introduction to Spree Commerce
 
         %h3.when-icon.icon When?
         %p
           %span.dtstart
-            - date_string = '2012-05-22'
+            - date_string = '2012-07-24'
             - date = Date.parse date_string
             %abbr.value{ :title => "#{date_string}" } #{date.strftime("#{date.day.ordinalize} %B, %Y")}
             %span.value 6:30pm
 
         %h3.where-icon.icon
-          Where? (
-          %a.get-directions{ :href => "http://maps.google.co.uk/maps?q=rumblelabs&hl=en&ll=54.598323,-5.929527&spn=0.108792,0.338173&sll=53.800651,-4.064941&sspn=14.223239,43.286133&t=h&hq=rumblelabs&z=12&iwloc=A", :title => "Show me the way to the Rumble Laboratory"} Get Directions
-          )
+          Where?
+          -# %a.get-directions{ :href => "http://maps.google.co.uk/maps?q=rumblelabs&hl=en&ll=54.598323,-5.929527&spn=0.108792,0.338173&sll=53.800651,-4.064941&sspn=14.223239,43.286133&t=h&hq=rumblelabs&z=12&iwloc=A", :title => "Show me the way to the Rumble Laboratory"} Get Directions
+          
         %p.location
-          The Rumble Laboratory
-          %br
-          2nd Floor, 21 Ormeau Avenue, Belfast, Antrim BT2 8HD
+          To be confirmed
+          -# The Rumble Laboratory
+          -# %%br
+          -# %2nd Floor, 21 Ormeau Avenue, Belfast, Antrim BT2 8HD
 
         %h3.what-icon.icon What?
         %p.description
-          Testing can often be seen as a chore, or something that only testers do. This is an opportunity to peer into the world of agile testing practices were tests become the driver for how you build your code and the code's documentation, while providing a fast feedback mechanism, helping to ensure that your last push didn't bork anything.
-
-        %h3
-          Behaviour Driven Development
+          If you ever wanted to build an ecommerce website, in Rails, this would be a great talk to come along to.
 
         %p.description
-          A look at using the <a href="http://en.wikipedia.org/wiki/Behavior_Driven_Development">Behaviour Driven Development</a> (BDD) Methodology with Ruby to create well tested and documented and tested code which meets the needs of the requirements and nothing more.
-          By <a href="https://twitter.com/#!/zakgrant">Zak Grant</a> of <a href="http://rumblelabs.com">Rumble Labs</a>
-
-        %h3 RSPEC - Y U SO SLOW?
-
+          <a href="https://github.com/BDQ">Brian Quinn</a>, cofounder and CTO of <a href="http://spreecommerce.com/">Spree Commerce</a>, Inc, presents a whistle stop tour through Spree's key features with an in-depth look at how it uses Ruby, Rails, engines, the asset pipeline and Deface to build the worlds most flexible e-commerce platform.
         %p.description
-          A case study looking at how ExamTime use TDD technologies on some real projects, the issues we've faced integrating the various different libraries, and how we use CI to pull everything together.
-          By David Kennedy of <a href="http://www.examtime.com">ExamTime</a>
+          Brian has been using Ruby for fun and profit for several years now. He's a long time contributor to Spree and the author of the <a href="https://github.com/railsdog/deface">Deface project</a>.
 
-        %a.url.cta{:href=> "http://digitalcircle.org/events/belfast-ruby-testing-ruby"} Attend Meetup >
+        %a.url.cta{:href=> "http://digitalcircle.org/events/belfast-ruby-an-introduction-to-spree-commerce"} Attend Meetup >
       .previous
         %h3 Previous Meetups
         %ul
           %li
             %a{:href => 'http://digitalcircle.org/events/making-the-jump-to-ruby'} BR-1: Making the Jump to Ruby
             %a{:href => 'http://digitalcircle.org/events/ruby-without-rails'} BR-2: Ruby without Rails
+            %a{:href => 'http://digitalcircle.org/events/belfast-ruby-testing-ruby'} BR-3: Testing Ruby
   .col.two
     %section.section
       %h1 Training
@@ -84,12 +78,15 @@
   %ul.sponsors
     %h3 This months sponsors
     %li.sponsor
+      %a{ :href => "http://spreecommerce.com/", :title => "Spree Commerce"}
+        = image_tag "spree-logo.png", :alt => "Spree Commerce", :class => "sponsor-logo"
+    %li.sponsor
       %a{ :href => "http://examtime.com", :title => "Exam Time"}
         = image_tag "exam-time-logo.png", :alt => "Exam Time", :class => "sponsor-logo"
     %li.sponsor
       %a{ :href => "http://rumblelabs.com", :title => "Rumble Labs"}
         = image_tag "rumble-labs-logo.png", :alt => "Rumble Labs", :class => "sponsor-logo"
-    %li.sponsor
-      %a{ :href => "http://digitalcircle.org/", :title => "Digital Circle"}
-        = image_tag "digital-circle-logo.png", :alt => "Digital Circle", :class => "sponsor-logo"
+    -# %li.sponsor
+      -# %a{ :href => "http://digitalcircle.org/", :title => "Digital Circle"}
+        -# = image_tag "digital-circle-logo.png", :alt => "Digital Circle", :class => "sponsor-logo"
 
