@@ -12,6 +12,7 @@ end
 gem "haml"
 gem 'jquery-rails'
 gem "validate_email"
+gem 'rails_exception_handler', :git => "git://github.com/rumblelabs/rails_exception_handler.git"
 
 gem "asset_sync"
 

@@ -70,6 +70,7 @@ body {
 
 /* Sponsors */
 
+
 .sponsor {
   display: block;
   background-color: #fff;
@@ -165,6 +166,25 @@ body {
   overflow: auto;
 }
 
+.previous {
+  margin: 45px 0 20px 0;
+  h3 {
+    margin-bottom: 15px;
+  }
+  ul {
+    border-top: 1px solid #d7d7d9;
+    li {
+      a {
+        padding: 10px 0;
+        border-bottom: 1px solid #d7d7d9;
+        display: block;
+      }
+    }
+  }
+}
+
+
+
 
 /* Flash */
 #flash {
@@ -250,8 +270,11 @@ body {
    }
 
    .sponsors {
-     margin-top:60px;
+     margin-top:32px;
      margin-left: 20px;
+     h3 {
+       padding: 0 0 5px; 
+     }
    }
 
    .sponsor {

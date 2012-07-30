@@ -5,28 +5,42 @@
       %p Our meetups are open to all experience levels, from total novices to expert Rubyists.
 
       .vevent
-        %h2.summary BR-1: Making the Jump to Ruby
+        %h2.summary BR-4: An Introduction to Spree Commerce
 
         %h3.when-icon.icon When?
         %p
           %span.dtstart
-            %abbr.value{ :title => "2012-01-31" }31st January 2012,
+            - date_string = '2012-07-24'
+            - date = Date.parse date_string
+            %abbr.value{ :title => "#{date_string}" } #{date.strftime("#{date.day.ordinalize} %B, %Y")}
             %span.value 6:30pm
 
         %h3.where-icon.icon
-          Where? (
-          %a.get-directions{ :href => "http://maps.google.co.uk/maps?q=rumble+labs+belfast&hl=en&ll=54.592891,-5.929399&spn=0.010592,0.026436&hq=rumble+labs&hnear=Belfast,+United+Kingdom&t=m&z=16&vpsrc=0", :title => "Show me the way to Rumble Labs"} Get Directions
-          )
+          Where?
+          %a.get-directions{ :href => "http://maps.google.co.uk/maps?q=rumblelabs&hl=en&ll=54.598323,-5.929527&spn=0.108792,0.338173&sll=53.800651,-4.064941&sspn=14.223239,43.286133&t=h&hq=rumblelabs&z=12&iwloc=A", :title => "Show me the way to the Rumble Laboratory"} Get Directions
+          
         %p.location
           The Rumble Laboratory
           %br
-          21 Ormeau Avenue, Belfast, BT2 8HD
+          2nd Floor, 21 Ormeau Avenue, Belfast, Antrim BT2 8HD
 
         %h3.what-icon.icon What?
-        %p.description The first Belfast Ruby event will broach the topic of "Making the Jump to Ruby". It’s never an easy decision for a developer to change languages but most who move to Ruby and Rails never look back!
-        %p.description This first meetup is a chance to talk to experienced Ruby developers and recent migrants about the differences between languages and their cultures, what makes Ruby so great, and how to get started.
-        %p.description We'll have beer and pizza, but space will be limited in The Rumble Laboratory.
-        %a.url.cta{:href=> "http://digitalcircle.org/events/making-the-jump-to-ruby"} Attend Meetup >
+        %p.description
+          If you ever wanted to build an ecommerce website, in Rails, this would be a great talk to come along to.
+
+        %p.description
+          <a href="https://github.com/BDQ">Brian Quinn</a>, cofounder and CTO of <a href="http://spreecommerce.com/">Spree Commerce</a>, Inc, presents a whistle stop tour through Spree's key features with an in-depth look at how it uses Ruby, Rails, engines, the asset pipeline and Deface to build the worlds most flexible e-commerce platform.
+        %p.description
+          Brian has been using Ruby for fun and profit for several years now. He's a long time contributor to Spree and the author of the <a href="https://github.com/railsdog/deface">Deface project</a>.
+
+        %a.url.cta{:href=> "http://digitalcircle.org/events/belfast-ruby-an-introduction-to-spree-commerce"} Attend Meetup >
+      .previous
+        %h3 Previous Meetups
+        %ul
+          %li
+            %a{:href => 'http://digitalcircle.org/events/making-the-jump-to-ruby'} BR-1: Making the Jump to Ruby
+            %a{:href => 'http://digitalcircle.org/events/ruby-without-rails'} BR-2: Ruby without Rails
+            %a{:href => 'http://digitalcircle.org/events/belfast-ruby-testing-ruby'} BR-3: Testing Ruby
   .col.two
     %section.section
       %h1 Training
@@ -61,12 +75,17 @@
 
 %aside#sidebar
   %ul.sponsors
+    %h3 This months sponsors
+    %li.sponsor
+      %a{ :href => "http://spreecommerce.com/", :title => "Spree Commerce"}
+        = image_tag "spree-logo.png", :alt => "Spree Commerce", :class => "sponsor-logo"
+    %li.sponsor
+      %a{ :href => "http://examtime.com", :title => "Exam Time"}
+        = image_tag "exam-time-logo.png", :alt => "Exam Time", :class => "sponsor-logo"
     %li.sponsor
       %a{ :href => "http://rumblelabs.com", :title => "Rumble Labs"}
-        %span.sponsor-tag Sponsor
         = image_tag "rumble-labs-logo.png", :alt => "Rumble Labs", :class => "sponsor-logo"
-    %li.sponsor
-      %a{ :href => "http://airpointofsale.com/", :title => "Airpos"}
-        %span.sponsor-tag Sponsor
-        = image_tag "airpos-logo.png", :alt => "Airpos", :class => "sponsor-logo"
+    -# %li.sponsor
+      -# %a{ :href => "http://digitalcircle.org/", :title => "Digital Circle"}
+        -# = image_tag "digital-circle-logo.png", :alt => "Digital Circle", :class => "sponsor-logo"
 
