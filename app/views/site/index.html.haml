@@ -5,12 +5,12 @@
       %p Our meetups are open to all experience levels, from total novices to expert Rubyists. Do come along!
 
       .vevent
-        %h2.summary Vagrant: Shipping your dev box
+        %h2.summary Lightning Talks
 
         %h3.when-icon.icon When?
         %p
           %span.dtstart
-            - date_string = '2013-09-03'
+            - date_string = '2013-10-01'
             - date = Date.parse date_string
             %abbr.value{ :title => "#{date_string}" } #{date.strftime("#{date.day.ordinalize} %B, %Y")}
             %span.value 6:30pm
@@ -26,16 +26,17 @@
 
         %h3.what-icon.icon What?
         %p.description
-          Ruby developers have access to some great tools to maintain their working environments. Bundler, RVM and rubyenv have given us the ability to move between legacy and beta versions for different projects cleanly and easily - but what about other dependencies like database packages?
+          Rather than having one talk, this month we're opening up the mic/whiteboard to anyone with something to say, about Ruby.
+          
+          We've got two talks lined up so far, but we need more. They don't need to last long (10mins max.) and don't require slides.
+          
+          After the talks we'll probably head to the Duke of York.
 
-          I'd like to introduce Vagrant as a tool that sets out to solve 'works on my machine' head scratching and brings the repeatability and automation of modern production environments back into developer's hands.
-
-          Talk by @brrygrdn
-
-        %a.url.cta{:href=> "http://digitalcircle.org/events/belfast-ruby-vagrant-shipping-your-dev-box"} Attend Meetup >
+        %a.url.cta{:href=> "http://digitalcircle.org/events/belfast-ruby-lightning-talks"} Attend Meetup >
       .previous
         %h3 Previous Meetups
         %ul
+          %li= link_to 'BR-9: Vagrant: Shipping your dev box', 'http://digitalcircle.org/events/belfast-ruby-vagrant-shipping-your-dev-box'
           %li= link_to 'BR-8: Let\'s talk about testing', 'http://digitalcircle.org/events/belfast-ruby-lets-talk-about-testing'
           %li= link_to 'BR-7: Rails 4.0.0: What\'s New?', 'http://digitalcircle.org/events/belfast-ruby-rails-400-whats-new'
           %li= link_to 'BR-6: A brief intro to Neo4j', 'http://digitalcircle.org/events/belfast-ruby-a-brief-intro-to-neo4j'
