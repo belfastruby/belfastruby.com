@@ -5,12 +5,12 @@
       %p Our meetups are open to all experience levels, from total novices to expert Rubyists. Do come along!
 
       .vevent
-        %h2.summary Lightning Talks
+        %h2.summary An Introduction to Ruby
 
         %h3.when-icon.icon When?
         %p
           %span.dtstart
-            - date_string = '2013-10-01'
+            - date_string = '2014-02-04'
             - date = Date.parse date_string
             %abbr.value{ :title => "#{date_string}" } #{date.strftime("#{date.day.ordinalize} %B, %Y")}
             %span.value 6:30pm
@@ -18,7 +18,7 @@
         %h3.where-icon.icon
           Where?
           %a.get-directions{ :href => "http://maps.google.com/maps?f=d&source=s_d&saddr=&hl=en&ie=UTF8&layer=c&daddr=The%20Rumble%20Laboratory%20@54.60231963589608,-5.927209854125977", :title => "The Rumble Laboratory"} Get Directions
-          
+
         %p.location
           The Rumble Laboratory
           %br
@@ -26,26 +26,25 @@
 
         %h3.what-icon.icon What?
         %p.description
-          Rather than having one talk, this month we're opening up the mic/whiteboard to anyone with something to say, about Ruby.
-          
-          We've got two talks lined up so far, but we need more. They don't need to last long (10mins max.) and don't require slides.
-          
-          After the talks we'll probably head to the Duke of York.
+          For our first Belfast Ruby meetup of 2014 we’ll be holding a few short talks focused on making the jump to Ruby, open to people of all experience levels.
+          Bring your laptop along too if you'd like some help with getting set up.
+          Drinks and snacks will be provided, so do come along.
 
-        %a.url.cta{:href=> "http://digitalcircle.org/events/belfast-ruby-lightning-talks"} Attend Meetup >
+        %a.url.cta{:href=> "http://digitalcircle.org/events/an-introduction-to-ruby"} Attend Meetup >
       .previous
         %h3 Previous Meetups
         %ul
+          %li= link_to 'BR-10: Lightning Talks', 'http://digitalcircle.org/events/belfast-ruby-lightning-talks'
           %li= link_to 'BR-9: Vagrant: Shipping your dev box', 'http://digitalcircle.org/events/belfast-ruby-vagrant-shipping-your-dev-box'
           %li= link_to 'BR-8: Let\'s talk about testing', 'http://digitalcircle.org/events/belfast-ruby-lets-talk-about-testing'
           %li= link_to 'BR-7: Rails 4.0.0: What\'s New?', 'http://digitalcircle.org/events/belfast-ruby-rails-400-whats-new'
           %li= link_to 'BR-6: A brief intro to Neo4j', 'http://digitalcircle.org/events/belfast-ruby-a-brief-intro-to-neo4j'
           %li= link_to 'BR-5: Build Conf Special', 'http://digitalcircle.org/events/belfast-ruby-build-conf-special'
-          %li= link_to 'BR-4: An Introduction to Spree Commerce', 'http://digitalcircle.org/events/belfast-ruby-an-introduction-to-spree-commerce' 
+          %li= link_to 'BR-4: An Introduction to Spree Commerce', 'http://digitalcircle.org/events/belfast-ruby-an-introduction-to-spree-commerce'
           %li= link_to 'BR-3: Testing Ruby', 'http://digitalcircle.org/events/belfast-ruby-testing-ruby'
           %li= link_to 'BR-2: Ruby without Rails', 'http://digitalcircle.org/events/ruby-without-rails'
-          %li= link_to 'BR-1: Making the Jump to Ruby', 'http://digitalcircle.org/events/making-the-jump-to-ruby'     
-          
+          %li= link_to 'BR-1: Making the Jump to Ruby', 'http://digitalcircle.org/events/making-the-jump-to-ruby'
+
   .col.two
     %section.section
       %h1 Training
@@ -75,8 +74,6 @@
         -# %li.icon.meetup-icon
           -# %a{ :href => "https://github.com/belfastruby", :title => "Belfast Ruby Meetup Profile"} Meetup.com
           -# Profile
-
-
 
 %aside#sidebar
   %ul.sponsors
