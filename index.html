@@ -1,40 +1,30 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Belfast Ruby
 ---
-
-<div id="home">
-  <h1>Blog Posts</h1>
   <ul class="posts">
-<!--     {% for post in site.posts %}
+<!-- {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %} -->
-
     <a href="{{ site.posts.first.url }}">
-  {{site.posts.first.title}}
-</a>
-  {{site.posts.first.content}}
-  <ul>
-  {% for sponsor in site.posts.first.sponsors  %}
-  {% if sponsor.name == "rumble" %}
-    <li class="rumble">
-  {% else %}
-    <li>
-  {% endif %}
-
-    {{sponsor.name}}
-    <a href="{{sponsor.link}}">
-    <img src="{{sponsor.image}}" />
-  </a>
-  </li>
-
-
-  {% endfor %}
-</ul>
-
-
-
-
+    {{site.posts.first.title}}
+    </a>
+    <a href="{{site.posts.first.register_link}}">Register</a>
+    {{site.posts.first.content}}
+    <ul>
+      {% for sponsor in site.posts.first.sponsors  %}
+      {% if sponsor.name == "rumble" %}
+      <li class="rumble">
+      {% else %}
+      <li>
+      {% endif %}
+      {{sponsor.name}}
+      <a href="{{sponsor.link}}">
+        <img src="{{sponsor.image}}" />
+      </a>
+      </li>
+      {% endfor %}
+    </ul>
   </ul>
 </div>
 
