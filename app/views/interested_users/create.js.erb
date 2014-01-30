@@ -1,8 +1,0 @@
-$('#interest_message').html('<%= escape_javascript @message %>');
-$('#interest_message').effect("highlight", {}, 500);
-<% if @success %>
-  $('#interested_user_email').val('').blur(); // Clear text input
-  $('#interest_message').css('color', '#57A957');
-<% else %>
-  $('#interest_message').css('color', '#C43C35');
-<% end %>
