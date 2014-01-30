@@ -3,15 +3,14 @@ layout: default
 title: Belfast Ruby
 ---
   <ul class="posts">
-<!-- {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %} -->
-    {{site.posts.first.title}}
+    <h1>{{site.posts.first.title}}</h1>
     <a href="{{site.posts.first.register_link}}">Register</a>
     {{site.posts.first.when}}
     {{site.posts.first.location}}
     <a href="{{site.posts.first.directions}}">Get Directions</a>
     {{site.posts.first.content}}
+
+    <h2>Event Sponsors</h2>
     <ul>
       {% for sponsor in site.posts.first.sponsors  %}
       {% if sponsor.name == "rumble" %}
@@ -30,3 +29,6 @@ title: Belfast Ruby
 </div>
 
 
+<!-- {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %} -->
