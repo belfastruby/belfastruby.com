@@ -5,19 +5,13 @@ layout: default
 <p class="meta">{{ page.date | date_to_string }}</p>
 
 <div class="post">
-  using this mate
 {{ content }}
-
   <ul>
   {% for sponsor in page.sponsors  %}
-
-
     {{sponsor.name}}
-    <a href="{{sponsor.link}}">
-    <img src="{{sponsor.image}}" />
-  </a>
-  </li>
-
-
+    <li>
+      <a href="{{sponsor.link}}"><img src="{{sponsor.image}}" /></a>
+    </li>
   {% endfor %}
+  </ul>
 </div>

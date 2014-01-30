@@ -6,10 +6,11 @@ title: Belfast Ruby
 <!-- {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %} -->
-    <a href="{{ site.posts.first.url }}">
     {{site.posts.first.title}}
-    </a>
     <a href="{{site.posts.first.register_link}}">Register</a>
+    {{site.posts.first.when}}
+    {{site.posts.first.location}}
+    <a href="{{site.posts.first.directions}}">Get Directions</a>
     {{site.posts.first.content}}
     <ul>
       {% for sponsor in site.posts.first.sponsors  %}
