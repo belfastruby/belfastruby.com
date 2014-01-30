@@ -17,12 +17,15 @@ This will install all gems required to run the app.
 
 This site is built on Jekyll. Please refer to its documentation for help http://jekyllrb.com/docs/home/
 
-### Sass
 
-To make Sass work with Jekyll a Rakefile has been included.
-When making changes to the .scss files run this command to output them:
+### Compass
 
-    rake build
+To use sass compass is being used. Edit scss within sass folder, do not edit the css files directly. To install and watch scss files for changes:
+
+    gem install compass
+    compass install compass
+    compass watch
+
 
 ### Run site locally
 
