@@ -5,27 +5,34 @@ title: Belfast Ruby
 <article class="meetup">
   <section class="top-details">
     <h1>{{site.posts.first.title}}</h1>
-    <a href="{{site.posts.first.register_link}}" class="red-btn">Register for Event</a>
-    {{site.posts.first.when}}
-    {{site.posts.first.location}}
-    <a href="{{site.posts.first.directions}}">Get Directions</a>
+    <div class="small-info">
+      <ul class="when-where">
+        <li>{{site.posts.first.when}}</li>
+        <li>{{site.posts.first.location}} <a href="{{site.posts.first.directions}}">Get Directions</a></li>
+      </ul>
+       <a href="{{site.posts.first.register_link}}" class="red-btn">Register for Event</a>
+    </div>
+  </section>
+  <section class="main-event-details clearfix">
     {{site.posts.first.content}}
   </section>
-  <h2>Event Sponsors</h2>
-  <ul>
-    {% for sponsor in site.posts.first.sponsors  %}
-    {% if sponsor.name == "rumble" %}
-    <li class="rumble">
-    {% else %}
-    <li>
-    {% endif %}
-    {{sponsor.name}}
-    <a href="{{sponsor.link}}">
-      <img src="{{sponsor.image}}" />
-    </a>
-    </li>
-    {% endfor %}
-  </ul>
+  <section class="sponsor-details clearfix">
+    <h2><span class="underline">Event</span> Sponsors</h2>
+    <ul>
+      {% for sponsor in site.posts.first.sponsors  %}
+      {% if sponsor.name == "rumble" %}
+      <li class="rumble">
+      {% else %}
+      <li>
+      {% endif %}
+      <a href="{{sponsor.link}}">
+        <img src="{{sponsor.image}}" />
+      </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="bar">This event is kindly sponsored by these fine folks. Interested in sponsoring a meetup? <a href="#">Get in touch</a></p>
+  </section>
 </article>
 
 

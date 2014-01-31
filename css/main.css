@@ -419,27 +419,34 @@ h1 {
   font-size: 100px;
   font-weight: 100;
   color: #4c4c4c;
-  padding: 0 0 0.5em 0;
+  padding: 0 0 0.4em 0;
 }
 
 /* line 21, ../sass/_typography.scss */
 h2 {
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   font-size: 22px;
+  font-weight: 600;
   color: #891438;
 }
+/* line 26, ../sass/_typography.scss */
+h2 .underline {
+  border-bottom: 3px solid #891438;
+  padding-bottom: 4px;
+  font-weight: 600;
+}
 
-/* line 27, ../sass/_typography.scss */
+/* line 33, ../sass/_typography.scss */
 p {
   color: #494949;
   font-size: 18px;
 }
-/* line 30, ../sass/_typography.scss */
+/* line 36, ../sass/_typography.scss */
 p .intro {
   font-size: 22px;
 }
 
-/* line 35, ../sass/_typography.scss */
+/* line 41, ../sass/_typography.scss */
 nav ul li a {
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   color: #afafaf;
@@ -447,12 +454,12 @@ nav ul li a {
   text-transform: uppercase;
   font-weight: 300;
 }
-/* line 41, ../sass/_typography.scss */
+/* line 47, ../sass/_typography.scss */
 nav ul li a:hover, nav ul li a.active {
   color: #494949;
 }
 
-/* line 46, ../sass/_typography.scss */
+/* line 52, ../sass/_typography.scss */
 a.red-btn {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
@@ -469,15 +476,102 @@ a.red-btn {
   cursor: pointer;
   display: inline-block;
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
-  font-size: 19px;
-  padding: 0.5em 1em;
+  font-size: 18px;
+  padding: 0.5em 1em 0.4em;
   text-align: center;
   text-decoration: none;
+  display: inline-block;
 }
 /* line 19, ../sass/_mixins.scss */
 a.red-btn:hover {
   background: #891438;
   color: white;
+}
+
+/* line 57, ../sass/_typography.scss */
+.when-where {
+  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  list-style: none;
+  font-size: 16px;
+  line-height: 26px;
+}
+/* line 62, ../sass/_typography.scss */
+.when-where li {
+  color: #4c4c4c;
+}
+/* line 65, ../sass/_typography.scss */
+.when-where a {
+  color: #4c4c4c;
+  text-decoration: underline;
+}
+/* line 68, ../sass/_typography.scss */
+.when-where a:hover {
+  text-decoration: none;
+}
+
+/* line 74, ../sass/_typography.scss */
+.main-event-details {
+  color: #494949;
+  font-size: 18px;
+  line-height: 27px;
+}
+/* line 78, ../sass/_typography.scss */
+.main-event-details h3 {
+  font-size: 22px;
+  line-height: 41px;
+  font-weight: 200;
+  width: 48%;
+  float: left;
+  padding-right: 2%;
+}
+/* line 86, ../sass/_typography.scss */
+.main-event-details p {
+  width: 48%;
+  float: right;
+  margin: 0 0 1.3em 0;
+  padding-left: 2%;
+}
+
+/* line 94, ../sass/_typography.scss */
+p.bar {
+  font-size: 16px;
+  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+/* line 98, ../sass/_typography.scss */
+p.bar a {
+  color: #494949;
+  text-decoration: underline;
+}
+/* line 101, ../sass/_typography.scss */
+p.bar a:hover {
+  text-decoration: none;
+}
+
+/* line 107, ../sass/_typography.scss */
+footer .bio p {
+  color: white;
+  margin: 0;
+  font-size: 22px;
+  line-height: 39px;
+}
+
+/* line 114, ../sass/_typography.scss */
+footer .contact li {
+  list-style: none;
+  line-height: 40px;
+  font-size: 18px;
+}
+/* line 118, ../sass/_typography.scss */
+footer .contact li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 124, ../sass/_typography.scss */
+.ruby-links li {
+  list-style: none;
+  line-height: 25px;
 }
 
 /* Base Stylesheet for General Styles */
@@ -502,38 +596,126 @@ a.red-btn:hover {
 /* line 15, ../sass/_base.scss */
 body {
   background: url(../assets/images/ruby-shape.svg) no-repeat top right;
+  box-sizing: border-box;
 }
 
-/* line 19, ../sass/_base.scss */
+/* line 20, ../sass/_base.scss */
 header {
   border-top: 5px solid #891438;
   padding: 2.4em 0 2em 0;
 }
 
-/* line 24, ../sass/_base.scss */
+/* line 25, ../sass/_base.scss */
 nav ul {
   float: left;
 }
-/* line 26, ../sass/_base.scss */
+/* line 27, ../sass/_base.scss */
 nav ul li {
   display: inline-block;
   padding: 0 0.8em 0 0;
 }
 
-/* line 32, ../sass/_base.scss */
+/* line 33, ../sass/_base.scss */
 .logo {
   float: right;
 }
 
-/* line 36, ../sass/_base.scss */
+/* line 37, ../sass/_base.scss */
 .top-details {
   width: 70%;
 }
 
 /* line 41, ../sass/_base.scss */
+.small-info {
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  position: relative;
+}
+
+/* line 48, ../sass/_base.scss */
+ul.when-where {
+  display: inline-block;
+  margin: 0 2em 0 0;
+}
+
+/* line 53, ../sass/_base.scss */
+.red-btn {
+  position: absolute;
+  margin: 5px;
+}
+
+/* line 58, ../sass/_base.scss */
+.main-event-details {
+  padding: 80px 0 0 0;
+}
+
+/* line 62, ../sass/_base.scss */
+.sponsor-details {
+  padding: 65px 0;
+}
+/* line 64, ../sass/_base.scss */
+.sponsor-details ul {
+  padding: 55px 0;
+}
+/* line 66, ../sass/_base.scss */
+.sponsor-details ul li {
+  list-style: none;
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+/* line 75, ../sass/_base.scss */
+.bar {
+  background: #efefef;
+  padding: 1.1em 1.5em;
+  width: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 82, ../sass/_base.scss */
 footer {
   width: 100%;
-  padding: 2em 0;
+  padding: 3em 0;
   background: #891438;
   color: white;
+  height: 120px;
+}
+
+/* line 90, ../sass/_base.scss */
+.bio {
+  width: 40%;
+  padding-right: 10%;
+  float: left;
+}
+
+/* line 96, ../sass/_base.scss */
+.contact {
+  width: 20%;
+  float: right;
+}
+
+/* line 100, ../sass/_base.scss */
+.main-event-details-links {
+  padding: 20px 0 0 0;
+}
+
+/* line 103, ../sass/_base.scss */
+.linky-page {
+  min-height: 200px;
+  padding: 10px 0 30px 0;
+}
+/* line 106, ../sass/_base.scss */
+.linky-page a {
+  color: #494949;
+  line-height: 35px;
+}
+/* line 109, ../sass/_base.scss */
+.linky-page a:hover {
+  text-decoration: none;
 }

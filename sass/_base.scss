@@ -14,6 +14,7 @@
 
 body{
   background: url(../assets/images/ruby-shape.svg) no-repeat top right;
+  box-sizing: border-box;
 }
 
 header{
@@ -37,10 +38,79 @@ nav ul {
   width: 70%;
 }
 
+.small-info{
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  position: relative;
+}
+
+ul.when-where{
+  display: inline-block;
+  margin: 0 2em 0 0;
+}
+
+.red-btn{
+  position: absolute;
+  margin: 5px;
+}
+
+.main-event-details{
+  padding: 80px 0 0 0;
+}
+
+.sponsor-details{
+  padding: 65px 0;
+  ul{
+    padding: 55px 0;
+    li{
+    list-style: none;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    }
+  }
+}
+
+.bar{
+  background: $light-bg-grey;
+  padding: 1.1em 1.5em;
+  width: 100%;
+  @include border-radius(3px);
+}
 
 footer{
   width: 100%;
-  padding: 2em 0;
+  padding: 3em 0;
   background: $ruby-red;
   color: $white;
+  height: 120px;
 }
+
+.bio{
+  width: 40%;
+  padding-right: 10%;
+  float: left;
+}
+
+.contact{
+  width: 20%;
+  float: right;
+}
+.main-event-details-links{
+  padding: 20px 0 0 0;
+}
+.linky-page{
+  min-height: 200px;
+  padding:10px 0 30px 0;
+  a{
+    color: $common-grey;
+    line-height: 35px;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+
+
