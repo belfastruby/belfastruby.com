@@ -1,0 +1,23 @@
+/* Mixins */
+
+@import "variables";
+
+@mixin btn{
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-property: color, background;
+  border-radius: 3px;
+  border: solid 1px $ruby-red;
+  color: $ruby-red;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 400;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover{
+    background: lighten($ruby-red, 10%);
+    color: lighten($ruby-red, 10%);
+  }
+}

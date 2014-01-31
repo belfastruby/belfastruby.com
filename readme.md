@@ -29,9 +29,9 @@ To use sass compass is being used. Edit scss within sass folder, do not edit the
 
 ### Run site locally
 
-To run the site in your browser locally use:
+To run the site in your browser locally and watch for any changes made use:
 
-    jekyll serve
+    jekyll serve --watch
 
 
 

@@ -1,0 +1,31 @@
+/* Base Stylesheet for General Styles */
+
+@import "mixins";
+@import "variables";
+
+.container{
+  width: 90%;
+}
+
+header{
+  border-top: 5px solid $ruby-red;
+  padding: 2em 0;
+}
+
+nav{
+  ul{
+    li{
+      display: inline-block;
+      a{
+
+      }
+    }
+  }
+}
+
+footer{
+  width: 100%;
+  padding: 2em 0;
+  background: $ruby-red;
+  color: $white;
+}

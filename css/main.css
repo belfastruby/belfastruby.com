@@ -386,56 +386,84 @@ table {
   border-spacing: 0;
 }
 
+/* Mixins */
 /* ============================
-   Mixins
+   Variables
    ============================ */
+/* Typography */
 /* ============================
-   Base - General Layout
+   Variables
    ============================ */
-/* line 18, ../sass/main.scss */
-nav {
-  display: block;
-}
-/* line 20, ../sass/main.scss */
-nav ul li a {
-  display: inline-block;
-}
-
-/* line 25, ../sass/main.scss */
-footer {
-  width: 100%;
-  background: #891438;
-  color: white;
-}
-
-/* ============================
-   Typography
-   ============================ */
-/* line 35, ../sass/main.scss */
+/* line 5, ../sass/_typography.scss */
 body {
   font-family: "Aleo-Regular", Georgia, serif;
   font-style: normal;
 }
 
-/* line 40, ../sass/main.scss */
+/* line 10, ../sass/_typography.scss */
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* line 14, ../sass/_typography.scss */
 h1 {
   font-size: 100px;
   color: #4c4c4c;
 }
 
-/* line 45, ../sass/main.scss */
+/* line 19, ../sass/_typography.scss */
 h2 {
-  font-family: "Proxima-Nova-Semibold" Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   font-size: 22px;
   color: #891438;
 }
 
-/* line 51, ../sass/main.scss */
+/* line 25, ../sass/_typography.scss */
 p {
   color: #494949;
   font-size: 18px;
 }
-/* line 54, ../sass/main.scss */
+/* line 28, ../sass/_typography.scss */
 p .intro {
   font-size: 22px;
+}
+
+/* line 33, ../sass/_typography.scss */
+nav ul li a {
+  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  color: #afafaf;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Base Stylesheet for General Styles */
+/* Mixins */
+/* ============================
+   Variables
+   ============================ */
+/* ============================
+   Variables
+   ============================ */
+/* line 6, ../sass/_base.scss */
+.container {
+  width: 90%;
+}
+
+/* line 10, ../sass/_base.scss */
+header {
+  border-top: 5px solid #891438;
+  padding: 2em 0;
+}
+
+/* line 17, ../sass/_base.scss */
+nav ul li {
+  display: inline-block;
+}
+
+/* line 26, ../sass/_base.scss */
+footer {
+  width: 100%;
+  padding: 2em 0;
+  background: #891438;
+  color: white;
 }

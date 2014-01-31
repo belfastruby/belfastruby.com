@@ -3,56 +3,7 @@
 @charset "utf-8";
 @import "variables";
 @import "normalize";
-
-/* ============================
-   Mixins
-   ============================ */
-
-
-
-
-/* ============================
-   Base - General Layout
-   ============================ */
-
-nav {
-  display: block;
-  ul li a{
-    display: inline-block;
-  }
-}
-
-footer{
-  width: 100%;
-  background: $ruby-red;
-  color: $white;
-}
-
-/* ============================
-   Typography
-   ============================ */
-
-body{
-  font-family: "Aleo-Regular", Georgia, serif;
-  font-style: normal;
-}
-
-h1{
-  font-size: 100px;
-  color: $dark-grey;
-}
-
-h2{
-  font-family: "Proxima-Nova-Semibold" Helvetica, Arial, sans-serif;
-  font-size: 22px;
-  color: $ruby-red;
-}
-
-p{
-  color: $common-grey;
-  font-size: 18px;
-  .intro{
-    font-size: 22px;
-  }
-}
+@import "mixins";
+@import "typography";
+@import "base";
 

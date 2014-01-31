@@ -15,16 +15,20 @@
     </head>
     <body>
       <header>
-        <nav>
-          <ul>
-            <li><a href="#">Current Event</a></li>
-            <li><a href="#">Past Events</a></li>
-            <li><a href="#">Resources</a></li>
-          </ul>
-        </nav>
+        <section class="container">
+          <nav>
+            <ul>
+              <li><a href="#">Current Event</a></li>
+              <li><a href="#">Past Events</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </nav>
+        </section>
       </header>
 
-      {{ content }}
+      <section class="container">
+        {{ content }}
+      </section>
 
       <footer>
         <div class="bio">
@@ -34,5 +38,6 @@
           <li><a href="http://twitter.com/belfastruby">@BelfastRuby</a>on Twitter</li>
         </div>
       </footer>
+
     </body>
 </html>
