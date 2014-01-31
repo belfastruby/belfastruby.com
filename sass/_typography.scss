@@ -13,7 +13,9 @@ h1, h2, h3{
 
 h1{
   font-size: 100px;
+  font-weight: 100;
   color: $dark-grey;
+  padding: 0 0 0.5em 0;
 }
 
 h2{
@@ -35,4 +37,12 @@ nav ul li a{
   color: $pale-grey;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 300;
+  &:hover, &.active{
+   color: $common-grey;
+  }
+}
+
+a.red-btn{
+  @include btn;
 }

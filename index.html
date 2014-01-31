@@ -2,31 +2,31 @@
 layout: default
 title: Belfast Ruby
 ---
-  <ul class="posts">
+<article class="meetup">
+  <section class="top-details">
     <h1>{{site.posts.first.title}}</h1>
-    <a href="{{site.posts.first.register_link}}" class="btn">Register</a>
+    <a href="{{site.posts.first.register_link}}" class="red-btn">Register for Event</a>
     {{site.posts.first.when}}
     {{site.posts.first.location}}
     <a href="{{site.posts.first.directions}}">Get Directions</a>
     {{site.posts.first.content}}
-
-    <h2>Event Sponsors</h2>
-    <ul>
-      {% for sponsor in site.posts.first.sponsors  %}
-      {% if sponsor.name == "rumble" %}
-      <li class="rumble">
-      {% else %}
-      <li>
-      {% endif %}
-      {{sponsor.name}}
-      <a href="{{sponsor.link}}">
-        <img src="{{sponsor.image}}" />
-      </a>
-      </li>
-      {% endfor %}
-    </ul>
+  </section>
+  <h2>Event Sponsors</h2>
+  <ul>
+    {% for sponsor in site.posts.first.sponsors  %}
+    {% if sponsor.name == "rumble" %}
+    <li class="rumble">
+    {% else %}
+    <li>
+    {% endif %}
+    {{sponsor.name}}
+    <a href="{{sponsor.link}}">
+      <img src="{{sponsor.image}}" />
+    </a>
+    </li>
+    {% endfor %}
   </ul>
-</div>
+</article>
 
 
 <!-- {% for post in site.posts %}

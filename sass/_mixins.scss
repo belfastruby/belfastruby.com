@@ -3,21 +3,21 @@
 @import "variables";
 
 @mixin btn{
-  -webkit-transition-duration: 0.5s;
-  -webkit-transition-property: color, background;
+  @include transition-duration(0.3s);
+  @include transition-property(color, background);
+  background: none;
   border-radius: 3px;
-  border: solid 1px $ruby-red;
+  border: solid 3px $ruby-red;
   color: $ruby-red;
   cursor: pointer;
   display: inline-block;
+  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   font-size: 19px;
-  font-weight: 400;
   padding: 0.5em 1em;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   &:hover{
-    background: lighten($ruby-red, 10%);
-    color: lighten($ruby-red, 10%);
+    background: $ruby-red;
+    color: $white;
   }
 }

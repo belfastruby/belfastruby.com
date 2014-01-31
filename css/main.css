@@ -386,6 +386,15 @@ table {
   border-spacing: 0;
 }
 
+/* ==========================================================================
+   Custom
+  ========================================================================== */
+/* line 381, ../sass/_normalize.scss */
+ul, li {
+  padding-left: 0;
+  margin-left: 0;
+}
+
 /* Mixins */
 /* ============================
    Variables
@@ -408,32 +417,67 @@ h1, h2, h3 {
 /* line 14, ../sass/_typography.scss */
 h1 {
   font-size: 100px;
+  font-weight: 100;
   color: #4c4c4c;
+  padding: 0 0 0.5em 0;
 }
 
-/* line 19, ../sass/_typography.scss */
+/* line 21, ../sass/_typography.scss */
 h2 {
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   font-size: 22px;
   color: #891438;
 }
 
-/* line 25, ../sass/_typography.scss */
+/* line 27, ../sass/_typography.scss */
 p {
   color: #494949;
   font-size: 18px;
 }
-/* line 28, ../sass/_typography.scss */
+/* line 30, ../sass/_typography.scss */
 p .intro {
   font-size: 22px;
 }
 
-/* line 33, ../sass/_typography.scss */
+/* line 35, ../sass/_typography.scss */
 nav ul li a {
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   color: #afafaf;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 300;
+}
+/* line 41, ../sass/_typography.scss */
+nav ul li a:hover, nav ul li a.active {
+  color: #494949;
+}
+
+/* line 46, ../sass/_typography.scss */
+a.red-btn {
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background;
+  -moz-transition-property: color, background;
+  -o-transition-property: color, background;
+  transition-property: color, background;
+  background: none;
+  border-radius: 3px;
+  border: solid 3px #891438;
+  color: #891438;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 19, ../sass/_mixins.scss */
+a.red-btn:hover {
+  background: #891438;
+  color: white;
 }
 
 /* Base Stylesheet for General Styles */
@@ -446,21 +490,47 @@ nav ul li a {
    ============================ */
 /* line 6, ../sass/_base.scss */
 .container {
+  margin: 0 auto;
   width: 90%;
 }
 
-/* line 10, ../sass/_base.scss */
+/* line 11, ../sass/_base.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 15, ../sass/_base.scss */
+body {
+  background: url(../assets/images/ruby-shape.svg) no-repeat top right;
+}
+
+/* line 19, ../sass/_base.scss */
 header {
   border-top: 5px solid #891438;
-  padding: 2em 0;
+  padding: 2.4em 0 2em 0;
 }
 
-/* line 17, ../sass/_base.scss */
+/* line 24, ../sass/_base.scss */
+nav ul {
+  float: left;
+}
+/* line 26, ../sass/_base.scss */
 nav ul li {
   display: inline-block;
+  padding: 0 0.8em 0 0;
 }
 
-/* line 26, ../sass/_base.scss */
+/* line 32, ../sass/_base.scss */
+.logo {
+  float: right;
+}
+
+/* line 36, ../sass/_base.scss */
+.top-details {
+  width: 70%;
+}
+
+/* line 41, ../sass/_base.scss */
 footer {
   width: 100%;
   padding: 2em 0;

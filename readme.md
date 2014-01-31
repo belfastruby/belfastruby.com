@@ -20,7 +20,8 @@ This site is built on Jekyll. Please refer to its documentation for help http://
 
 ### Compass
 
-To use sass compass is being used. Edit scss within sass folder, do not edit the css files directly. To install and watch scss files for changes:
+To use sass, Compass is being used. Edit scss within sass folder, do not edit the css files directly.
+To install and watch scss files for changes:
 
     gem install compass
     compass install compass
