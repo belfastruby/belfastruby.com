@@ -13,7 +13,7 @@
 }
 
 body{
-  background: url(../assets/images/ruby-shape.svg) no-repeat top right;
+  background: url(../images/ruby-shape.svg) no-repeat top right;
   box-sizing: border-box;
 }
 
@@ -26,7 +26,7 @@ nav ul {
   float: left;
   li{
     display: inline-block;
-    padding: 0 0.8em 0 0;
+    padding: 0 1em 0 0;
   }
 }
 
@@ -74,7 +74,7 @@ ul.when-where{
 
 .bar{
   background: $light-bg-grey;
-  padding: 1.1em 1.5em;
+  padding: 0.1em 0;
   width: 100%;
   @include border-radius(3px);
 }

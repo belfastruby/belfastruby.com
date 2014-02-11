@@ -92,15 +92,23 @@ a.red-btn{
   }
 }
 
-p.bar{
-  font-size: 16px;
-  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
-  text-align: center;
+.bar {
+  p {
+    font-size: 16px;
+    font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+    text-align: center;
+  }
   a{
+    margin-left: 6px;
     color: $common-grey;
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 2px solid $common-grey;
+    padding-bottom: 2px;
+    font-weight: 400;
     &:hover{
       text-decoration: none;
+      border-color: $ruby-red;
+      color: $ruby-red;
     }
   }
 }
@@ -119,6 +127,9 @@ footer .contact li{
   a{
     color: $white;
     text-decoration: none;
+  }
+  i{
+    padding-right: 4px;
   }
 }
 

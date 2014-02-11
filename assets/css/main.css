@@ -478,12 +478,13 @@ a.red-btn {
   display: inline-block;
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   font-size: 18px;
+  font-weight: 400;
   padding: 0.5em 1em 0.4em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
 }
-/* line 19, ../sass/_mixins.scss */
+/* line 20, ../sass/_mixins.scss */
 a.red-btn:hover {
   background: #891438;
   color: white;
@@ -533,23 +534,29 @@ a.red-btn:hover {
   padding-left: 2%;
 }
 
-/* line 95, ../sass/_typography.scss */
-p.bar {
+/* line 96, ../sass/_typography.scss */
+.bar p {
   font-size: 16px;
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   text-align: center;
 }
-/* line 99, ../sass/_typography.scss */
-p.bar a {
+/* line 101, ../sass/_typography.scss */
+.bar a {
+  margin-left: 6px;
   color: #494949;
-  text-decoration: underline;
-}
-/* line 102, ../sass/_typography.scss */
-p.bar a:hover {
   text-decoration: none;
+  border-bottom: 2px solid #494949;
+  padding-bottom: 2px;
+  font-weight: 400;
+}
+/* line 108, ../sass/_typography.scss */
+.bar a:hover {
+  text-decoration: none;
+  border-color: #891438;
+  color: #891438;
 }
 
-/* line 108, ../sass/_typography.scss */
+/* line 116, ../sass/_typography.scss */
 footer .bio p {
   color: white;
   margin: 0;
@@ -557,19 +564,23 @@ footer .bio p {
   line-height: 39px;
 }
 
-/* line 115, ../sass/_typography.scss */
+/* line 123, ../sass/_typography.scss */
 footer .contact li {
   list-style: none;
   line-height: 40px;
   font-size: 18px;
 }
-/* line 119, ../sass/_typography.scss */
+/* line 127, ../sass/_typography.scss */
 footer .contact li a {
   color: white;
   text-decoration: none;
 }
+/* line 131, ../sass/_typography.scss */
+footer .contact li i {
+  padding-right: 4px;
+}
 
-/* line 125, ../sass/_typography.scss */
+/* line 136, ../sass/_typography.scss */
 .ruby-links li {
   list-style: none;
   line-height: 25px;
@@ -596,7 +607,7 @@ footer .contact li a {
 
 /* line 15, ../sass/_base.scss */
 body {
-  background: url(../assets/images/ruby-shape.svg) no-repeat top right;
+  background: url(../images/ruby-shape.svg) no-repeat top right;
   box-sizing: border-box;
 }
 
@@ -613,7 +624,7 @@ nav ul {
 /* line 27, ../sass/_base.scss */
 nav ul li {
   display: inline-block;
-  padding: 0 0.8em 0 0;
+  padding: 0 1em 0 0;
 }
 
 /* line 33, ../sass/_base.scss */
@@ -670,7 +681,7 @@ ul.when-where {
 /* line 75, ../sass/_base.scss */
 .bar {
   background: #efefef;
-  padding: 1.1em 1.5em;
+  padding: 0.1em 0;
   width: 100%;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;

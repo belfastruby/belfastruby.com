@@ -8,7 +8,7 @@ title: Belfast Ruby
     <div class="small-info">
       <ul class="when-where">
         <li>{{site.posts.first.when}}</li>
-        <li>{{site.posts.first.location}} <a href="{{site.posts.first.directions}}">Get Directions</a></li>
+        <li>{{site.posts.first.location}} - <a href="{{site.posts.first.directions}}">Get Directions</a></li>
       </ul>
        <a href="{{site.posts.first.register_link}}" class="red-btn">Register for Event</a>
     </div>
@@ -31,7 +31,9 @@ title: Belfast Ruby
       </li>
       {% endfor %}
     </ul>
-    <p class="bar">This event is kindly sponsored by these fine folks. Interested in sponsoring a meetup? <a href="#">Get in touch</a></p>
+    <div class="bar">
+      <p>This event is kindly sponsored by these fine folks. Interested in sponsoring a meetup? <a href="#">Get in touch</a></p>
+    </div>
   </section>
 </article>
 
