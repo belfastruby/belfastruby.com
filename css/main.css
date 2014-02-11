@@ -407,14 +407,15 @@ ul, li {
 body {
   font-family: "Aleo-Regular", Georgia, serif;
   font-style: normal;
+  font-weight: 100;
 }
 
-/* line 10, ../sass/_typography.scss */
+/* line 11, ../sass/_typography.scss */
 h1, h2, h3 {
   margin: 0;
 }
 
-/* line 14, ../sass/_typography.scss */
+/* line 15, ../sass/_typography.scss */
 h1 {
   font-size: 100px;
   font-weight: 100;
@@ -422,31 +423,31 @@ h1 {
   padding: 0 0 0.4em 0;
 }
 
-/* line 21, ../sass/_typography.scss */
+/* line 22, ../sass/_typography.scss */
 h2 {
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   font-size: 22px;
   font-weight: 600;
   color: #891438;
 }
-/* line 26, ../sass/_typography.scss */
+/* line 27, ../sass/_typography.scss */
 h2 .underline {
   border-bottom: 3px solid #891438;
   padding-bottom: 4px;
   font-weight: 600;
 }
 
-/* line 33, ../sass/_typography.scss */
+/* line 34, ../sass/_typography.scss */
 p {
   color: #494949;
   font-size: 18px;
 }
-/* line 36, ../sass/_typography.scss */
+/* line 37, ../sass/_typography.scss */
 p .intro {
   font-size: 22px;
 }
 
-/* line 41, ../sass/_typography.scss */
+/* line 42, ../sass/_typography.scss */
 nav ul li a {
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   color: #afafaf;
@@ -454,12 +455,12 @@ nav ul li a {
   text-transform: uppercase;
   font-weight: 300;
 }
-/* line 47, ../sass/_typography.scss */
+/* line 48, ../sass/_typography.scss */
 nav ul li a:hover, nav ul li a.active {
   color: #494949;
 }
 
-/* line 52, ../sass/_typography.scss */
+/* line 53, ../sass/_typography.scss */
 a.red-btn {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
@@ -488,34 +489,34 @@ a.red-btn:hover {
   color: white;
 }
 
-/* line 57, ../sass/_typography.scss */
+/* line 58, ../sass/_typography.scss */
 .when-where {
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   list-style: none;
   font-size: 16px;
   line-height: 26px;
 }
-/* line 62, ../sass/_typography.scss */
+/* line 63, ../sass/_typography.scss */
 .when-where li {
   color: #4c4c4c;
 }
-/* line 65, ../sass/_typography.scss */
+/* line 66, ../sass/_typography.scss */
 .when-where a {
   color: #4c4c4c;
   text-decoration: underline;
 }
-/* line 68, ../sass/_typography.scss */
+/* line 69, ../sass/_typography.scss */
 .when-where a:hover {
   text-decoration: none;
 }
 
-/* line 74, ../sass/_typography.scss */
+/* line 75, ../sass/_typography.scss */
 .main-event-details {
   color: #494949;
   font-size: 18px;
   line-height: 27px;
 }
-/* line 78, ../sass/_typography.scss */
+/* line 79, ../sass/_typography.scss */
 .main-event-details h3 {
   font-size: 22px;
   line-height: 41px;
@@ -524,7 +525,7 @@ a.red-btn:hover {
   float: left;
   padding-right: 2%;
 }
-/* line 86, ../sass/_typography.scss */
+/* line 87, ../sass/_typography.scss */
 .main-event-details p {
   width: 48%;
   float: right;
@@ -532,23 +533,23 @@ a.red-btn:hover {
   padding-left: 2%;
 }
 
-/* line 94, ../sass/_typography.scss */
+/* line 95, ../sass/_typography.scss */
 p.bar {
   font-size: 16px;
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   text-align: center;
 }
-/* line 98, ../sass/_typography.scss */
+/* line 99, ../sass/_typography.scss */
 p.bar a {
   color: #494949;
   text-decoration: underline;
 }
-/* line 101, ../sass/_typography.scss */
+/* line 102, ../sass/_typography.scss */
 p.bar a:hover {
   text-decoration: none;
 }
 
-/* line 107, ../sass/_typography.scss */
+/* line 108, ../sass/_typography.scss */
 footer .bio p {
   color: white;
   margin: 0;
@@ -556,19 +557,19 @@ footer .bio p {
   line-height: 39px;
 }
 
-/* line 114, ../sass/_typography.scss */
+/* line 115, ../sass/_typography.scss */
 footer .contact li {
   list-style: none;
   line-height: 40px;
   font-size: 18px;
 }
-/* line 118, ../sass/_typography.scss */
+/* line 119, ../sass/_typography.scss */
 footer .contact li a {
   color: white;
   text-decoration: none;
 }
 
-/* line 124, ../sass/_typography.scss */
+/* line 125, ../sass/_typography.scss */
 .ruby-links li {
   list-style: none;
   line-height: 25px;
