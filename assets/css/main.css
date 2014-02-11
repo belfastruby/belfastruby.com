@@ -693,10 +693,10 @@ ul.when-where {
 /* line 82, ../sass/_base.scss */
 footer {
   width: 100%;
+  float: left;
   padding: 3em 0;
   background: #891438;
   color: white;
-  height: 120px;
 }
 
 /* line 90, ../sass/_base.scss */
