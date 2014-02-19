@@ -5,51 +5,35 @@
       %p Our meetups are open to all experience levels, from total novices to expert Rubyists. Do come along!
 
       .vevent
-        %h2.summary TDD &amp; Getting Started with Jekyll
+        %h2.summary An Introduction to Ruby
 
         %h3.when-icon.icon When?
         %p
           %span.dtstart
-            - date_string = '2014-03-04'
+            - date_string = '2014-02-04'
             - date = Date.parse date_string
             %abbr.value{ :title => "#{date_string}" } #{date.strftime("#{date.day.ordinalize} %B, %Y")}
             %span.value 6:30pm
 
         %h3.where-icon.icon
           Where?
-          %a.get-directions{ :href => "https://maps.google.com/maps?f=d&source=s_d&saddr=&hl=en&ie=UTF8&layer=c&daddr=54.5925564,-5.927705", :title => "ShopKeep POS"} Get Directions
+          %a.get-directions{ :href => "http://maps.google.com/maps?f=d&source=s_d&saddr=&hl=en&ie=UTF8&layer=c&daddr=The%20Rumble%20Laboratory%20@54.60231963589608,-5.927209854125977", :title => "The Rumble Laboratory"} Get Directions
 
         %p.location
-          ShopKeep POS
+          The Rumble Laboratory
           %br
-          Alexander House, 1st Floor (Above Limelight), 17 Ormeau Avenue, Belfast, BT2 8HD
+          2nd Floor, 46 Hill Street, Belfast, BT1 2LB
 
         %h3.what-icon.icon What?
         %p.description
-          This month we're holding two talks catered to both the experienced Ruby developers and the newcomers, as well as workshops to help you get started.
+          For our first Belfast Ruby meetup of 2014 we’ll be holding a few short talks focused on making the jump to Ruby, open to people of all experience levels.
+          Bring your laptop along too if you'd like some help with getting set up.
+          Drinks and snacks will be provided, so do come along.
 
-        %h4 Test Driven Development
-        %p.description
-          %a{:href => 'https://twitter.com/brrygrdn'}Barry Gordon
-          from
-          %a{:href => 'http://www.shopkeep.com/'}ShopKeep
-          will be talking about TDD, disucssing how you can use the principles in your Ruby development process. He'll be lending a helping hand during the workshops with getting set up with TDD/Ruby learning tool, Ruby Koans.
-
-        %h4 Jekyll and Github Pages
-        %p.description
-          Following this,
-          %a{:href => 'https://twitter.com/cobyism'}Coby Chapple
-          from
-          %a{:href => 'http://www.github.com/'}GitHub
-          will be demonstrating how to set up a free website using Jekyll, a ruby-based open source static site generator, and deploy it using GitHub Pages.
-
-          Bring your laptop if you'd like help on getting your Jekyll sites up and running on the night.
-
-        %a.url.cta{:href=> "http://digitalcircle.org/events/belfast-ruby-tdd-getting-started-with-jekyll"} Attend Meetup >
+        %a.url.cta{:href=> "http://digitalcircle.org/events/an-introduction-to-ruby"} Attend Meetup >
       .previous
         %h3 Previous Meetups
         %ul
-          %li= link_to 'BR-11: An Introduction to Ruby', 'http://digitalcircle.org/events/an-introduction-to-ruby'
           %li= link_to 'BR-10: Lightning Talks', 'http://digitalcircle.org/events/belfast-ruby-lightning-talks'
           %li= link_to 'BR-9: Vagrant: Shipping your dev box', 'http://digitalcircle.org/events/belfast-ruby-vagrant-shipping-your-dev-box'
           %li= link_to 'BR-8: Let\'s talk about testing', 'http://digitalcircle.org/events/belfast-ruby-lets-talk-about-testing'
@@ -102,9 +86,9 @@
     %li.sponsor
       %a{ :href => "http://rumblelabs.com", :title => "Rumble Labs"}
         = image_tag "rumblelabs-logo.png", :alt => "Rumble Labs", :class => "sponsor-logo"
-    / %li.sponsor
-    /   %a{ :href => "http://brewbot.io", :title => "Brewbot"}
-    /     = image_tag "brewbot-logo.png", :alt => "Brewbot", :class => "sponsor-logo"
+    %li.sponsor
+      %a{ :href => "http://brewbot.io", :title => "Brewbot"}
+        = image_tag "brewbot-logo.png", :alt => "Brewbot", :class => "sponsor-logo"
     %li.sponsor
       %a{ :href => "http://shopkeep.com", :title => "Shopkeep"}
         = image_tag "shopkeep-logo.png", :alt => "Shopkeep", :class => "sponsor-logo"
