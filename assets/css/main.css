@@ -1,67 +1,759 @@
+/* Main Stylesheet */
+/* ============================
+   Variables
+   ============================ */
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
 /*
-Syntax error: Invalid CSS after "...neral Styles *\/": expected "{", was "@import "mixins";"
-        on line 3 of /Users/melissakeizer/apps/belfastruby.com/assets/sass/_base.scss
-        from line 9 of /Users/melissakeizer/apps/belfastruby.com/assets/sass/main.scss
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 21, ../sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
 
-1: /Users/melissakeizer/apps/belfastruby.com/assets/sass/main.scss
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 31, ../sass/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
 
-Backtrace:
-/Users/melissakeizer/apps/belfastruby.com/assets/sass/_base.scss:3
-/Users/melissakeizer/apps/belfastruby.com/assets/sass/main.scss:9
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:1147:in `expected'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:1085:in `expected'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:1080:in `tok!'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:534:in `block'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:529:in `ruleset'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:553:in `block_child'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:543:in `block_contents'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:82:in `stylesheet'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:27:in `parse'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/engine.rb:342:in `_to_tree'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/engine.rb:274:in `to_tree'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/root_node.rb:20:in `render'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:68:in `perform'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/bin/compass:44:in `call'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/bin/compass:23:in `load'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/bin/compass:23:in `<main>'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/bin/ruby_noexec_wrapper:14:in `eval'
-/Users/melissakeizer/.rvm/gems/ruby-2.0.0-p247/bin/ruby_noexec_wrapper:14:in `<main>'
-*/
-body:before {
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 40, ../sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 49, ../sass/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 63, ../sass/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Removes default margin.
+ */
+/* line 73, ../sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 85, ../sass/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 94, ../sass/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/* line 107, ../sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 115, ../sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 124, ../sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 132, ../sass/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 140, ../sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 153, ../sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 162, ../sass/_normalize.scss */
+pre {
   white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...neral Styles */\": expected \"{\", was \"@import \"mixins\";\"\A         on line 3 of /Users/melissakeizer/apps/belfastruby.com/assets/sass/_base.scss\A         from line 9 of /Users/melissakeizer/apps/belfastruby.com/assets/sass/main.scss\A \A 1: /Users/melissakeizer/apps/belfastruby.com/assets/sass/main.scss"; }
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 172, ../sass/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 180, ../sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 189, ../sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 196, ../sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 200, ../sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 212, ../sass/_normalize.scss */
+img {
+  border: 0;
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 220, ../sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 232, ../sass/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 244, ../sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 255, ../sass/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 269, ../sass/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 281, ../sass/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 296, ../sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 306, ../sass/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 316, ../sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 327, ../sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 340, ../sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 349, ../sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 359, ../sass/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 372, ../sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ==========================================================================
+   Custom
+  ========================================================================== */
+/* line 381, ../sass/_normalize.scss */
+ul, li {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Mixins */
+/* ============================
+   Variables
+   ============================ */
+/* Typography */
+/* ============================
+   Variables
+   ============================ */
+/* line 5, ../sass/_typography.scss */
+body {
+  font-family: "Aleo-Regular", Georgia, serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+/* line 11, ../sass/_typography.scss */
+h1, h2, h3, p {
+  margin: 0;
+}
+
+/* line 15, ../sass/_typography.scss */
+h1 {
+  font-size: 100px;
+  font-weight: 100;
+  color: #4c4c4c;
+  padding: 0 0 0.4em 0;
+}
+
+/* line 22, ../sass/_typography.scss */
+h2 {
+  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #891438;
+}
+/* line 27, ../sass/_typography.scss */
+h2 .underline {
+  border-bottom: 3px solid #891438;
+  padding-bottom: 4px;
+  font-weight: 600;
+}
+
+/* line 34, ../sass/_typography.scss */
+h3 {
+  color: #494949;
+  font-size: 19px;
+  line-height: 2em;
+  padding-bottom: 0.1em;
+}
+
+/* line 41, ../sass/_typography.scss */
+p {
+  color: #494949;
+  font-size: 18px;
+}
+/* line 44, ../sass/_typography.scss */
+p .intro {
+  font-size: 22px;
+}
+
+/* line 49, ../sass/_typography.scss */
+nav ul li a {
+  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  color: #afafaf;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+/* line 55, ../sass/_typography.scss */
+nav ul li a:hover, nav ul li a.active {
+  color: #494949;
+}
+
+/* line 60, ../sass/_typography.scss */
+a.red-btn {
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background;
+  -moz-transition-property: color, background;
+  -o-transition-property: color, background;
+  transition-property: color, background;
+  background: none;
+  border-radius: 3px;
+  border: solid 3px #891438;
+  color: #891438;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0.5em 1em 0.4em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+/* line 20, ../sass/_mixins.scss */
+a.red-btn:hover {
+  background: #891438;
+  color: white;
+}
+
+/* line 65, ../sass/_typography.scss */
+.when-where {
+  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  list-style: none;
+  font-size: 16px;
+  line-height: 26px;
+}
+/* line 70, ../sass/_typography.scss */
+.when-where li {
+  color: #4c4c4c;
+}
+/* line 73, ../sass/_typography.scss */
+.when-where a {
+  color: #4c4c4c;
+  text-decoration: underline;
+}
+/* line 76, ../sass/_typography.scss */
+.when-where a:hover {
+  text-decoration: none;
+}
+
+/* line 82, ../sass/_typography.scss */
+.main-event-details {
+  color: #494949;
+  font-size: 18px;
+  line-height: 27px;
+}
+/* line 86, ../sass/_typography.scss */
+.main-event-details h3 {
+  font-size: 22px;
+  line-height: 41px;
+  font-weight: 200;
+  width: 48%;
+  float: left;
+  padding-right: 2%;
+}
+/* line 94, ../sass/_typography.scss */
+.main-event-details p {
+  width: 48%;
+  float: right;
+  margin: 0 0 1.3em 0;
+  padding-left: 2%;
+}
+
+/* line 103, ../sass/_typography.scss */
+.bar p {
+  font-size: 16px;
+  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  text-align: center;
+  line-height: 2.9em;
+}
+/* line 109, ../sass/_typography.scss */
+.bar a {
+  margin-left: 6px;
+  color: #494949;
+  text-decoration: none;
+  border-bottom: 2px solid #494949;
+  padding-bottom: 2px;
+  font-weight: 400;
+}
+/* line 116, ../sass/_typography.scss */
+.bar a:hover {
+  text-decoration: none;
+  border-color: #891438;
+  color: #891438;
+}
+
+/* line 124, ../sass/_typography.scss */
+footer .bio p {
+  color: white;
+  margin: 0;
+  font-size: 22px;
+  line-height: 39px;
+}
+
+/* line 131, ../sass/_typography.scss */
+footer .contact li {
+  list-style: none;
+  line-height: 40px;
+  font-size: 18px;
+}
+/* line 135, ../sass/_typography.scss */
+footer .contact li a {
+  color: white;
+  text-decoration: none;
+}
+/* line 139, ../sass/_typography.scss */
+footer .contact li i {
+  padding-right: 4px;
+}
+
+/* Resources page */
+/* line 148, ../sass/_typography.scss */
+.resources-page h2 {
+  padding-top: 2em;
+}
+
+/* line 153, ../sass/_typography.scss */
+ul.ruby-links {
+  margin: 0;
+}
+/* line 155, ../sass/_typography.scss */
+ul.ruby-links h3 {
+  padding-top: 1.2em;
+}
+/* line 158, ../sass/_typography.scss */
+ul.ruby-links li {
+  list-style: none;
+  line-height: 25px;
+}
+/* line 161, ../sass/_typography.scss */
+ul.ruby-links li:last-child {
+  padding-bottom: 1em;
+}
+/* line 164, ../sass/_typography.scss */
+ul.ruby-links li a {
+  color: #407789;
+  line-height: 35px;
+}
+/* line 167, ../sass/_typography.scss */
+ul.ruby-links li a:hover {
+  color: #479ab6;
+}
+
+/* Base Stylesheet for General Styles */
+/* Mixins */
+/* ============================
+   Variables
+   ============================ */
+/* ============================
+   Variables
+   ============================ */
+/* line 6, ../sass/_base.scss */
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* line 11, ../sass/_base.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 15, ../sass/_base.scss */
+body {
+  background: url(../images/ruby-shape.svg) no-repeat top right;
+  box-sizing: border-box;
+}
+
+/* line 20, ../sass/_base.scss */
+header {
+  border-top: 5px solid #891438;
+  padding: 2.4em 0 2em 0;
+}
+
+/* line 25, ../sass/_base.scss */
+nav ul {
+  float: left;
+}
+/* line 27, ../sass/_base.scss */
+nav ul li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+}
+
+/* line 33, ../sass/_base.scss */
+.logo {
+  float: right;
+}
+
+/* line 37, ../sass/_base.scss */
+.top-details {
+  width: 70%;
+}
+
+/* line 41, ../sass/_base.scss */
+.small-info {
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  position: relative;
+}
+
+/* line 48, ../sass/_base.scss */
+ul.when-where {
+  display: inline-block;
+  margin: 0 2em 0 0;
+}
+
+/* line 53, ../sass/_base.scss */
+.red-btn {
+  position: absolute;
+  margin: 5px;
+}
+
+/* line 58, ../sass/_base.scss */
+.main-event-details {
+  padding: 80px 0 0 0;
+}
+
+/* line 62, ../sass/_base.scss */
+.main-event-details-links {
+  padding: 20px 0 0 0;
+}
+
+/* line 67, ../sass/_base.scss */
+.sponsor-details {
+  padding: 65px 0;
+}
+/* line 69, ../sass/_base.scss */
+.sponsor-details ul {
+  padding: 55px 0;
+}
+/* line 71, ../sass/_base.scss */
+.sponsor-details ul li {
+  list-style: none;
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+/* line 80, ../sass/_base.scss */
+.bar {
+  background: #efefef;
+  padding: 0.1em 0;
+  width: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 87, ../sass/_base.scss */
+footer {
+  width: 100%;
+  float: left;
+  padding: 4.5em 0;
+  background: #891438;
+  color: white;
+}
+
+/* line 95, ../sass/_base.scss */
+.bio {
+  width: 40%;
+  padding-right: 10%;
+  float: left;
+}
+
+/* line 101, ../sass/_base.scss */
+.contact {
+  width: 35%;
+  float: right;
+}
+
+/* line 106, ../sass/_base.scss */
+.resources-page {
+  padding: 0 0 7em 0;
+}

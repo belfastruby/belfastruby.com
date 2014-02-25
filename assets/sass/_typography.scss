@@ -8,7 +8,7 @@ body{
   font-weight: 100;
 }
 
-h1, h2, h3{
+h1, h2, h3, p{
   margin: 0;
 }
 
@@ -21,7 +21,7 @@ h1{
 
 h2{
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   color: $ruby-red;
   .underline{
@@ -29,6 +29,13 @@ h2{
     padding-bottom: 4px;
     font-weight: 600;
   }
+}
+
+h3{
+  color: $common-grey;
+  font-size: 19px;
+  line-height: 2em;
+  padding-bottom: 0.1em;
 }
 
 p{
@@ -97,6 +104,7 @@ a.red-btn{
     font-size: 16px;
     font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
     text-align: center;
+    line-height: 2.9em;
   }
   a{
     margin-left: 6px;
@@ -133,9 +141,34 @@ footer .contact li{
   }
 }
 
-.ruby-links li{
-  list-style: none;
-  line-height: 25px;
+/* Resources page */
+
+
+.resources-page{
+  h2{
+    padding-top: 2em;
+  }
+}
+
+ul.ruby-links{
+  margin: 0;
+  h3{
+    padding-top: 1.2em;
+  }
+  li{
+    list-style: none;
+    line-height: 25px;
+    &:last-child{
+      padding-bottom: 1em;
+    }
+    a{
+      color: $blue-link;
+      line-height: 35px;
+      &:hover{
+        color: $blue-link-hover;
+      }
+    }
+  }
 }
 
 

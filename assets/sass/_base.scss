@@ -1,4 +1,4 @@
-om/* Base Stylesheet for General Styles */
+/* Base Stylesheet for General Styles */
 
 @import "mixins";
 @import "variables";
@@ -59,6 +59,11 @@ ul.when-where{
   padding: 80px 0 0 0;
 }
 
+.main-event-details-links{
+  padding: 20px 0 0 0;
+}
+
+
 .sponsor-details{
   padding: 65px 0;
   ul{
@@ -97,20 +102,9 @@ footer{
   width: 35%;
   float: right;
 }
-.main-event-details-links{
-  padding: 20px 0 0 0;
-}
-.linky-page{
-  min-height: 200px;
-  padding:10px 0 30px 0;
-  a{
-    color: $common-grey;
-    line-height: 35px;
-    &:hover{
-      text-decoration: none;
-    }
-  }
-}
 
+.resources-page{
+  padding:0 0 7em 0;
+}
 
 
