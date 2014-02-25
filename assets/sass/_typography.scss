@@ -46,7 +46,7 @@ p{
   }
 }
 
-nav ul li a{
+nav ul li a, .mobile_nav ul.mobile_links li a, .mobile_nav_expanded ul.mobile_links li a{
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   color: $pale-grey;
   text-decoration: none;
@@ -104,7 +104,8 @@ a.red-btn{
     font-size: 16px;
     font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
     text-align: center;
-    line-height: 2.9em;
+    line-height: 1.7em;
+    padding: 1.2em 2em;
   }
   a{
     margin-left: 6px;
