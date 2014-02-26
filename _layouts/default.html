@@ -15,6 +15,14 @@
 
       <!-- JQuery -->
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script src="assets/js/sidr.js"></script>
+      <script>
+      $(document).ready(function() {
+        $('#mobile_nav').sidr({
+          side: 'right'
+        });
+      });
+      </script>
 
     </head>
     <body>
@@ -28,22 +36,19 @@
               <li><a href="/resources.html">Resources</a></li>
             </ul>
           </nav>
-
-          <!-- <div class="mobile_nav">
-            <ul class="mobile_links">
-              <li><a href="/">Menu</a></li>
-            </ul>
-            <div class="hamburger"><a href="#">menu</a></div>
-          </div>
-          <div class="mobile_nav_expanded">
-            <ul class="mobile_links">
-              <li><a href="/">Menu</a></li>
-            </ul>
-          </div> -->
-
+           <a id="mobile_nav" class="burger" href="sidr">burger</a>
           <div class="logo"><img src="./assets/images/belfast-ruby-logo.svg"></img></div>
         </section>
       </header>
+      </div>
+      <div id="sidr">
+        <ul>
+          <li><a href="/">Current Event</a></li>
+          <li><a href="#">Past Events</a></li>
+          <li><a href="/#{about}">About</a></li>
+          <li><a href="/resources.html">Resources</a></li>
+        </ul>
+      </div>
 
       <section class="container clearfix">
         {{ content }}
