@@ -1,6 +1,41 @@
 @import "variables";
 @import "mixins";
 
+
+/* Mobile header */
+
+header.mobile_nav{
+  background: $ruby-red;
+  width: 100%;
+  float: left;
+  margin-bottom: 3em;
+  position: fixed;
+  z-index: 1000;
+  a.belfastruby{
+    float: left;
+    font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 14px 0 0 13px;
+    &:active{
+      color: $light-bg-grey;
+    }
+  }
+}
+
+.burger {
+  float: right;
+  height: 40px;
+  width: 40px;
+  background: url('../images/hamburger-white.svg') no-repeat;
+  background-size: 27px 36px;
+  text-indent: -999999px;
+  padding-right: 3px;
+}
+
 /* Slidey Mobile Nav */
 
 .sidr{
@@ -15,8 +50,16 @@
   width:230px;
   overflow-x:none;
   overflow-y:auto;
-  background:$common-grey;
+  background:$sidebar;
   color:$white;
+}
+
+.sidr_logo{
+  width: 100%;
+  img{
+    padding: 20px 0 20px 60px;
+    max-width: 110px;
+  }
 }
 
 #sidr {
@@ -38,28 +81,22 @@
         font-weight: 500;
         width: 100%;
         padding: 1em 0;
-        background: $common-grey;
+        background: $sidebar;
         display: block;
-        border-bottom: 1px solid lighten($common-grey, 5%);
+        border-bottom: 1px solid $sidebar-border;
         &:active{
           color: $white;
-          background: darken($common-grey, 10%);
+          background: $sidebar-hover;
         }
         &:hover{
-          background: darken($common-grey, 10%);
+          background: $sidebar-hover;
         }
       }
     }
   }
 }
 
-.burger {
-  float: right;
-  height: 30px;
-  width: 30px;
-  background: url('../images/hamburger.svg') no-repeat;
-  background-size: 30px 30px;
-  text-indent: -999999px;
-  padding: 0.3em;
-  margin-top: 8px;
-}
+/* Other elements only visible in viewports <480px */
+
+
+

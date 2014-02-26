@@ -5,7 +5,6 @@
 
 @media all and (min-width: 1300px) {
 
-
 }
 
 @media all and (max-width: 1200px) {
@@ -79,11 +78,45 @@ a.red-btn{
 
 }
 
+@media all and (max-width: 768px){
+
+  header.normal_nav{
+   display: none;
+  }
+
+  header.mobile_nav{
+   display: block;
+  }
+
+  h1{
+    padding-top: 1em;
+  }
+
+  .sponsor-details{
+    padding: 45px 0;
+  }
+
+  .sponsor-details ul {
+    padding: 1.7em 0 1em 0;
+    li{
+      text-align: center;
+      padding: 2.1em 0;
+      border-top: solid 1px $light-bg-grey;
+      border-left: solid 1px $light-bg-grey;
+      border-right: solid 1px $light-bg-grey;
+      &:last-child{
+        border-bottom: solid 1px $light-bg-grey;
+        padding-bottom: 2.1em;
+      }
+      img{
+        width: 40%;
+      }
+    }
+  }
+}
+
 @media all and (max-width: 660px) {
 
-nav{
-  display: none;
-}
 
 .logo{
   float: left;
@@ -114,47 +147,22 @@ h1{
     background: none;
   }
 
-  header{
-    padding: 0;
-  }
-
-  .burger{
-    display: block;
-  }
-
-  .container.container-header{
-    width: 100%;
-  }
-
-  .logo{
-    float: none;
-    display: block;
-    text-align: center;
-    clear: both;
-    padding: 1.6em 0;
-
-  }
-
   h1{
-   font-size: 45px;
-   text-align: center;
+   font-size: 53px;
   }
 
-  .small-info{
-    text-align: center;
+  .main-event-details h3, .main-event-details p{
+    font-size: 19px;
+    line-height: 32px;
   }
 
-  .small-info .red_btn_container{
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-    clear: both;
-    display: block;
+
+  footer{
+    padding: 2.5em 0;
   }
-  .small-info a.red-btn{
-    float: none;
-    text-align: center;
-    display: block;
+
+  footer .bio p, footer .contact li a{
+    font-size: 19px;
   }
 
 }

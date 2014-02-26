@@ -15,10 +15,11 @@
 
       <!-- JQuery -->
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script src="assets/js/all.js"></script>
       <script src="assets/js/sidr.js"></script>
       <script>
       $(document).ready(function() {
-        $('#mobile_nav').sidr({
+        $('#burger').sidr({
           side: 'right'
         });
       });
@@ -26,36 +27,39 @@
 
     </head>
     <body>
-      <header class="clearfix">
+      <header class="normal_nav clearfix">
         <section class="container container-header">
           <nav>
             <ul>
               <li><a href="/" class="active">Current Event</a></li>
               <li><a href="#">Past Events</a></li>
-              <li><a href="/#{about}">About</a></li>
+              <li><a href="#about" class="scroll-about">About</a></li>
               <li><a href="/resources.html">Resources</a></li>
             </ul>
           </nav>
-           <a id="mobile_nav" class="burger" href="sidr">burger</a>
           <div class="logo"><img src="./assets/images/belfast-ruby-logo.svg"></img></div>
         </section>
       </header>
-      </div>
-      <div id="sidr">
-        <ul>
-          <li><a href="/">Current Event</a></li>
-          <li><a href="#">Past Events</a></li>
-          <li><a href="/#{about}">About</a></li>
-          <li><a href="/resources.html">Resources</a></li>
-        </ul>
-      </div>
+      <header class="mobile_nav clearfix">
+        <a class="belfastruby" href="/">Belfast Ruby</a>
+        <a id="burger" class="burger" href="sidr">burger</a>
+        <div id="sidr">
+          <div class="sidr_logo"><img src="./assets/images/belfast-ruby-logo.svg"></img></div>
+          <ul>
+            <li><a href="/">Current Event</a></li>
+            <li><a href="#">Past Events</a></li>
+            <li><a href="/#about" class="scroll-about">About</a></li>
+            <li><a href="/resources.html">Resources</a></li>
+          </ul>
+        </div>
+      </header>
 
       <section class="container clearfix">
         {{ content }}
       </section>
 
       <footer class="clearfix">
-        <section class="container clearfix">
+        <section class="container clearfix" id="about">
           <div class="bio">
             <p>Belfast Ruby is community of aspiring and experienced developers in Belfast, Northern Ireland passionate about Ruby and Rails.</p>
           </div>
