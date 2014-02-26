@@ -425,7 +425,7 @@ h1 {
 
 /* line 22, ../sass/_typography.scss */
 h2 {
-  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: #891438;
@@ -466,7 +466,7 @@ p a:hover {
 
 /* line 56, ../sass/_typography.scss */
 nav ul li a, .number {
-  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
   color: #afafaf;
   text-decoration: none;
   text-transform: uppercase;
@@ -493,7 +493,7 @@ a.red-btn {
   color: #891438;
   cursor: pointer;
   display: inline-block;
-  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   min-width: 140px;
@@ -510,7 +510,7 @@ a.red-btn:hover {
 
 /* line 72, ../sass/_typography.scss */
 .when-where {
-  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
   list-style: none;
   font-size: 16px;
   line-height: 26px;
@@ -555,7 +555,7 @@ a.red-btn:hover {
 /* line 110, ../sass/_typography.scss */
 .bar p {
   font-size: 16px;
-  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
   text-align: center;
   line-height: 1.7em;
   padding: 1.2em 2em;
@@ -1003,7 +1003,7 @@ header.mobile_nav {
 /* line 14, ../sass/_mobile.scss */
 header.mobile_nav a.belfastruby {
   float: left;
-  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -1074,7 +1074,7 @@ header.mobile_nav a.belfastruby:active {
 }
 /* line 76, ../sass/_mobile.scss */
 #sidr ul li a {
-  font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
   color: #efefef;
   text-decoration: none;
   text-transform: uppercase;
