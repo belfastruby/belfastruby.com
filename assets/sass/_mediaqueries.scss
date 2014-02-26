@@ -3,14 +3,6 @@
 
 /* Media Queries */
 
-@media all and (min-width: 1300px) {
-
-}
-
-@media all and (max-width: 1200px) {
-
-
-}
 
 @media all and (max-width: 1040px) {
 
@@ -79,6 +71,10 @@ a.red-btn{
 }
 
 @media all and (max-width: 768px){
+
+  body{
+    background: url(../images/ruby-shape.svg) no-repeat 190px 0;
+  }
 
   header.normal_nav{
    display: none;
@@ -169,11 +165,5 @@ h1{
   footer .bio p, footer .contact li a{
     font-size: 19px;
   }
-
-}
-
-
-
-@media all and (max-width: 420px) {
 
 }

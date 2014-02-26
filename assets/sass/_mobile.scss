@@ -84,7 +84,7 @@ header.mobile_nav{
         background: $sidebar;
         display: block;
         border-bottom: 1px solid $sidebar-border;
-        &:active{
+        &.active{
           color: $white;
           background: $sidebar-hover;
         }

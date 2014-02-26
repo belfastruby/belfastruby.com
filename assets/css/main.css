@@ -454,8 +454,17 @@ p {
 p .intro {
   font-size: 22px;
 }
+/* line 47, ../sass/_typography.scss */
+p a {
+  color: #494949;
+  text-decoration: underline;
+}
+/* line 50, ../sass/_typography.scss */
+p a:hover {
+  text-decoration: none;
+}
 
-/* line 49, ../sass/_typography.scss */
+/* line 56, ../sass/_typography.scss */
 nav ul li a, .number {
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   color: #afafaf;
@@ -463,12 +472,12 @@ nav ul li a, .number {
   text-transform: uppercase;
   font-weight: 300;
 }
-/* line 55, ../sass/_typography.scss */
+/* line 62, ../sass/_typography.scss */
 nav ul li a:hover, nav ul li a.active, .number:hover, .number.active {
   color: #494949;
 }
 
-/* line 60, ../sass/_typography.scss */
+/* line 67, ../sass/_typography.scss */
 a.red-btn {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
@@ -499,34 +508,34 @@ a.red-btn:hover {
   color: white;
 }
 
-/* line 65, ../sass/_typography.scss */
+/* line 72, ../sass/_typography.scss */
 .when-where {
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   list-style: none;
   font-size: 16px;
   line-height: 26px;
 }
-/* line 70, ../sass/_typography.scss */
+/* line 77, ../sass/_typography.scss */
 .when-where li {
   color: #4c4c4c;
 }
-/* line 73, ../sass/_typography.scss */
+/* line 80, ../sass/_typography.scss */
 .when-where a {
   color: #4c4c4c;
   text-decoration: underline;
 }
-/* line 76, ../sass/_typography.scss */
+/* line 83, ../sass/_typography.scss */
 .when-where a:hover {
   text-decoration: none;
 }
 
-/* line 82, ../sass/_typography.scss */
+/* line 89, ../sass/_typography.scss */
 .main-event-details {
   color: #494949;
   font-size: 18px;
   line-height: 27px;
 }
-/* line 86, ../sass/_typography.scss */
+/* line 93, ../sass/_typography.scss */
 .main-event-details h3 {
   font-size: 22px;
   line-height: 41px;
@@ -535,7 +544,7 @@ a.red-btn:hover {
   float: left;
   padding-right: 2%;
 }
-/* line 94, ../sass/_typography.scss */
+/* line 101, ../sass/_typography.scss */
 .main-event-details p {
   width: 48%;
   float: right;
@@ -543,7 +552,7 @@ a.red-btn:hover {
   padding-left: 2%;
 }
 
-/* line 103, ../sass/_typography.scss */
+/* line 110, ../sass/_typography.scss */
 .bar p {
   font-size: 16px;
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
@@ -551,7 +560,7 @@ a.red-btn:hover {
   line-height: 1.7em;
   padding: 1.2em 2em;
 }
-/* line 110, ../sass/_typography.scss */
+/* line 117, ../sass/_typography.scss */
 .bar a {
   margin-left: 6px;
   color: #494949;
@@ -560,14 +569,14 @@ a.red-btn:hover {
   padding-bottom: 2px;
   font-weight: 400;
 }
-/* line 117, ../sass/_typography.scss */
+/* line 124, ../sass/_typography.scss */
 .bar a:hover {
   text-decoration: none;
   border-color: #891438;
   color: #891438;
 }
 
-/* line 125, ../sass/_typography.scss */
+/* line 132, ../sass/_typography.scss */
 footer .bio p {
   color: white;
   margin: 0;
@@ -575,72 +584,72 @@ footer .bio p {
   line-height: 39px;
 }
 
-/* line 132, ../sass/_typography.scss */
+/* line 139, ../sass/_typography.scss */
 footer .contact li {
   list-style: none;
   line-height: 40px;
   font-size: 18px;
 }
-/* line 136, ../sass/_typography.scss */
+/* line 143, ../sass/_typography.scss */
 footer .contact li a {
   color: white;
   text-decoration: none;
 }
-/* line 140, ../sass/_typography.scss */
+/* line 147, ../sass/_typography.scss */
 footer .contact li i {
   padding-right: 4px;
 }
 
 /* Resources page */
-/* line 149, ../sass/_typography.scss */
+/* line 156, ../sass/_typography.scss */
 .resources-page h2 {
   padding-top: 2em;
 }
 
-/* line 154, ../sass/_typography.scss */
+/* line 161, ../sass/_typography.scss */
 ul.ruby-links {
   margin: 0;
 }
-/* line 156, ../sass/_typography.scss */
+/* line 163, ../sass/_typography.scss */
 ul.ruby-links h3 {
   padding-top: 1.2em;
   display: inline-block;
 }
-/* line 160, ../sass/_typography.scss */
+/* line 167, ../sass/_typography.scss */
 ul.ruby-links li {
   list-style: none;
   line-height: 25px;
 }
-/* line 163, ../sass/_typography.scss */
+/* line 170, ../sass/_typography.scss */
 ul.ruby-links li:last-child {
   padding-bottom: 1em;
 }
-/* line 166, ../sass/_typography.scss */
+/* line 173, ../sass/_typography.scss */
 ul.ruby-links li a {
   color: #407789;
   line-height: 35px;
 }
-/* line 169, ../sass/_typography.scss */
+/* line 176, ../sass/_typography.scss */
 ul.ruby-links li a:hover {
   color: #479ab6;
 }
-/* line 173, ../sass/_typography.scss */
+/* line 180, ../sass/_typography.scss */
 ul.ruby-links li h3 a {
   text-decoration: none;
   color: #494949;
   font-size: 20px;
 }
-/* line 177, ../sass/_typography.scss */
+/* line 184, ../sass/_typography.scss */
 ul.ruby-links li h3 a:hover {
   color: #891438;
 }
-/* line 181, ../sass/_typography.scss */
+/* line 188, ../sass/_typography.scss */
 ul.ruby-links li p {
   width: 80%;
   padding: 0.2em 0;
 }
 
-/* line 188, ../sass/_typography.scss */
+/* line 195, ../sass/_typography.scss */
 .number {
   display: inline-block;
   padding-right: 11px;
@@ -801,97 +810,102 @@ footer {
    ============================ */
 /* Media Queries */
 @media all and (max-width: 1040px) {
-  /* line 17, ../sass/_mediaqueries.scss */
+  /* line 9, ../sass/_mediaqueries.scss */
   .top-details {
     width: 100%;
   }
 
-  /* line 22, ../sass/_mediaqueries.scss */
+  /* line 14, ../sass/_mediaqueries.scss */
   .main-event-details h3, .main-event-details p {
     width: 100%;
   }
-  /* line 25, ../sass/_mediaqueries.scss */
+  /* line 17, ../sass/_mediaqueries.scss */
   .main-event-details h3 {
     padding-bottom: 1.5em;
   }
 }
 @media all and (max-width: 940px) {
-  /* line 34, ../sass/_mediaqueries.scss */
+  /* line 26, ../sass/_mediaqueries.scss */
   h1 {
     font-size: 85px;
     padding-top: 0.2em;
   }
 
-  /* line 39, ../sass/_mediaqueries.scss */
+  /* line 31, ../sass/_mediaqueries.scss */
   .bio, .contact {
     width: 100%;
   }
 
-  /* line 43, ../sass/_mediaqueries.scss */
+  /* line 35, ../sass/_mediaqueries.scss */
   .bio {
     padding: 0 0 2em 0;
   }
 }
 @media all and (max-width: 850px) {
-  /* line 52, ../sass/_mediaqueries.scss */
+  /* line 44, ../sass/_mediaqueries.scss */
   h1 {
     font-size: 75px;
     padding: 0 0 0.5em 0;
   }
 
-  /* line 57, ../sass/_mediaqueries.scss */
+  /* line 49, ../sass/_mediaqueries.scss */
   .small-info {
     width: 100%;
     padding-bottom: 2em;
   }
-  /* line 60, ../sass/_mediaqueries.scss */
+  /* line 52, ../sass/_mediaqueries.scss */
   .small-info a.red-btn {
     display: block;
     margin: 15px 0 0 0;
   }
 
-  /* line 66, ../sass/_mediaqueries.scss */
+  /* line 58, ../sass/_mediaqueries.scss */
   .sponsor-details ul li {
     width: 100%;
     text-align: left;
     padding-bottom: 3.5em;
   }
-  /* line 70, ../sass/_mediaqueries.scss */
+  /* line 62, ../sass/_mediaqueries.scss */
   .sponsor-details ul li:last-child {
     padding-bottom: 0;
   }
-  /* line 73, ../sass/_mediaqueries.scss */
+  /* line 65, ../sass/_mediaqueries.scss */
   .sponsor-details ul li img {
     width: 40%;
     max-width: 230px;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 83, ../sass/_mediaqueries.scss */
+  /* line 75, ../sass/_mediaqueries.scss */
+  body {
+    background: url(../images/ruby-shape.svg) no-repeat 190px 0;
+  }
+
+  /* line 79, ../sass/_mediaqueries.scss */
   header.normal_nav {
     display: none;
   }
 
-  /* line 87, ../sass/_mediaqueries.scss */
+  /* line 83, ../sass/_mediaqueries.scss */
   header.mobile_nav {
     display: block;
   }
 
-  /* line 91, ../sass/_mediaqueries.scss */
+  /* line 87, ../sass/_mediaqueries.scss */
   h1 {
     padding-top: 1em;
   }
 
-  /* line 95, ../sass/_mediaqueries.scss */
+  /* line 91, ../sass/_mediaqueries.scss */
   .sponsor-details {
     padding: 45px 0;
   }
 
-  /* line 99, ../sass/_mediaqueries.scss */
+  /* line 95, ../sass/_mediaqueries.scss */
   .sponsor-details ul {
     padding: 1.7em 0 1em 0;
   }
-  /* line 101, ../sass/_mediaqueries.scss */
+  /* line 97, ../sass/_mediaqueries.scss */
   .sponsor-details ul li {
     text-align: center;
     padding: 2.1em 0;
@@ -899,72 +913,72 @@ footer {
     border-left: solid 1px #efefef;
     border-right: solid 1px #efefef;
   }
-  /* line 107, ../sass/_mediaqueries.scss */
+  /* line 103, ../sass/_mediaqueries.scss */
   .sponsor-details ul li:last-child {
     border-bottom: solid 1px #efefef;
     padding-bottom: 2.1em;
   }
-  /* line 111, ../sass/_mediaqueries.scss */
+  /* line 107, ../sass/_mediaqueries.scss */
   .sponsor-details ul li img {
     width: 40%;
   }
 
-  /* line 117, ../sass/_mediaqueries.scss */
+  /* line 113, ../sass/_mediaqueries.scss */
   ul.ruby-links li p {
     width: 100%;
   }
 }
 @media all and (max-width: 660px) {
-  /* line 125, ../sass/_mediaqueries.scss */
+  /* line 121, ../sass/_mediaqueries.scss */
   .logo {
     float: left;
     padding-bottom: 15px;
   }
-  /* line 128, ../sass/_mediaqueries.scss */
+  /* line 124, ../sass/_mediaqueries.scss */
   .logo img {
     max-width: 120px;
   }
 
-  /* line 131, ../sass/_mediaqueries.scss */
+  /* line 127, ../sass/_mediaqueries.scss */
   h1 {
     font-size: 60px;
     padding: 1.5em 0 0.5em 0;
   }
 
-  /* line 136, ../sass/_mediaqueries.scss */
+  /* line 132, ../sass/_mediaqueries.scss */
   .small-info a.red-btn {
     margin: 25px 0 0 0;
   }
 
-  /* line 140, ../sass/_mediaqueries.scss */
+  /* line 136, ../sass/_mediaqueries.scss */
   .main-event-details {
     padding: 70px 0 0 0;
   }
 }
 @media all and (max-width: 480px) {
-  /* line 150, ../sass/_mediaqueries.scss */
+  /* line 146, ../sass/_mediaqueries.scss */
   body {
     background: none;
   }
 
-  /* line 154, ../sass/_mediaqueries.scss */
+  /* line 150, ../sass/_mediaqueries.scss */
   h1 {
     font-size: 53px;
     padding-top: 1.4em;
   }
 
-  /* line 159, ../sass/_mediaqueries.scss */
+  /* line 155, ../sass/_mediaqueries.scss */
   .main-event-details h3, .main-event-details p {
     font-size: 19px;
     line-height: 32px;
   }
 
-  /* line 165, ../sass/_mediaqueries.scss */
+  /* line 161, ../sass/_mediaqueries.scss */
   footer {
     padding: 2.5em 0;
   }
 
-  /* line 169, ../sass/_mediaqueries.scss */
+  /* line 165, ../sass/_mediaqueries.scss */
   footer .bio p, footer .contact li a {
     font-size: 19px;
   }
@@ -1072,7 +1086,7 @@ header.mobile_nav a.belfastruby:active {
   border-bottom: 1px solid #3c3c3c;
 }
 /* line 87, ../sass/_mobile.scss */
-#sidr ul li a:active {
+#sidr ul li a.active {
   color: white;
   background: #222222;
 }
