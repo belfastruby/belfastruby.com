@@ -8,7 +8,7 @@ body{
   font-weight: 100;
 }
 
-h1, h2, h3, h4, p{
+h1, h2, h3, h4, .number, p{
   margin: 0;
 }
 
@@ -33,7 +33,7 @@ h2{
 
 h3{
   color: $common-grey;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 2em;
   padding-bottom: 0.1em;
 }
@@ -46,7 +46,7 @@ p{
   }
 }
 
-nav ul li a{
+nav ul li a, .number{
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   color: $pale-grey;
   text-decoration: none;
@@ -155,6 +155,7 @@ ul.ruby-links{
   margin: 0;
   h3{
     padding-top: 1.2em;
+    display: inline-block;
   }
   li{
     list-style: none;
@@ -169,7 +170,27 @@ ul.ruby-links{
         color: $blue-link-hover;
       }
     }
+    h3 a{
+      text-decoration: none;
+      color: $common-grey;
+      font-size: 20px;
+      &:hover{
+        color: $ruby-red;
+      }
+    }
+    p{
+      width: 80%;
+      padding: 0.2em 0;
+    }
   }
+}
+
+.number{
+  display: inline-block;
+  padding-right: 11px;
+  color: $ruby-red;
+  font-size: 19px;
+  font-weight: 500;
 }
 
 

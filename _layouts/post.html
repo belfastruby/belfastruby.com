@@ -1,8 +1,9 @@
 ---
 layout: default
+title: Belfast Ruby Event Details
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<!-- <h1>{{ page.title }}</h1>
+<p class="meta"></p>
 
 <div class="post">
 {{ content }}
@@ -14,4 +15,39 @@ layout: default
     </li>
   {% endfor %}
   </ul>
-</div>
+</div> -->
+
+<article class="meetup">
+  <section class="top-details">
+    <h1>{{site.post.title}}</h1>
+    <div class="small-info">
+      <ul class="when-where">
+        <li>{{site.post.when}}</li>
+        <li>{{site.post.location}} - <a href="{{site.post.directions}}">Get Directions</a></li>
+      </ul>
+      <a href="{{site.post.register_link}}" class="red-btn">Register for Event</a>
+    </div>
+  </section>
+  <section class="main-event-details clearfix">
+    {{site.post.content}}
+  </section>
+  <section class="sponsor-details clearfix">
+    <h2><span class="underline">Event</span> Sponsors</h2>
+    <ul>
+      {% for sponsor in site.posts.sponsors  %}
+      {% if sponsor.name == "rumble" %}
+      <li class="rumble">
+      {% else %}
+      <li>
+      {% endif %}
+      <a href="{{sponsor.link}}">
+        <img src="{{sponsor.image}}" />
+      </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="bar">
+      <p>This event is kindly sponsored by these fine folks. Interested in sponsoring a meetup? <a href="#">Get in touch</a></p>
+    </div>
+  </section>
+</article>

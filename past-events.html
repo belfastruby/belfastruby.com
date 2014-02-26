@@ -1,0 +1,25 @@
+---
+layout: default
+title: Belfast Ruby Past Events
+---
+<article class="meetup">
+  <section class="top-details">
+    <h1>Past Events</h1>
+  </section>
+  <section class="clearfix past-events-page">
+    <ul class="ruby-links">
+      {% for post in site.posts %}
+      <li>
+        <span class="number">{{ post.number }}</span><h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.description }}</p>
+        <a href="{{ post.url }}">Read More &raquo;</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+</article>
+
+
+<!-- {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %} -->

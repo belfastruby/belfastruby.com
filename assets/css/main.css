@@ -411,7 +411,7 @@ body {
 }
 
 /* line 11, ../sass/_typography.scss */
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, .number, p {
   margin: 0;
 }
 
@@ -440,7 +440,7 @@ h2 .underline {
 /* line 34, ../sass/_typography.scss */
 h3 {
   color: #494949;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 2em;
   padding-bottom: 0.1em;
 }
@@ -456,7 +456,7 @@ p .intro {
 }
 
 /* line 49, ../sass/_typography.scss */
-nav ul li a {
+nav ul li a, .number {
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   color: #afafaf;
   text-decoration: none;
@@ -464,7 +464,7 @@ nav ul li a {
   font-weight: 300;
 }
 /* line 55, ../sass/_typography.scss */
-nav ul li a:hover, nav ul li a.active {
+nav ul li a:hover, nav ul li a.active, .number:hover, .number.active {
   color: #494949;
 }
 
@@ -604,24 +604,49 @@ ul.ruby-links {
 /* line 156, ../sass/_typography.scss */
 ul.ruby-links h3 {
   padding-top: 1.2em;
+  display: inline-block;
 }
-/* line 159, ../sass/_typography.scss */
+/* line 160, ../sass/_typography.scss */
 ul.ruby-links li {
   list-style: none;
   line-height: 25px;
 }
-/* line 162, ../sass/_typography.scss */
+/* line 163, ../sass/_typography.scss */
 ul.ruby-links li:last-child {
   padding-bottom: 1em;
 }
-/* line 165, ../sass/_typography.scss */
+/* line 166, ../sass/_typography.scss */
 ul.ruby-links li a {
   color: #407789;
   line-height: 35px;
 }
-/* line 168, ../sass/_typography.scss */
+/* line 169, ../sass/_typography.scss */
 ul.ruby-links li a:hover {
   color: #479ab6;
+}
+/* line 173, ../sass/_typography.scss */
+ul.ruby-links li h3 a {
+  text-decoration: none;
+  color: #494949;
+  font-size: 20px;
+}
+/* line 177, ../sass/_typography.scss */
+ul.ruby-links li h3 a:hover {
+  color: #891438;
+}
+/* line 181, ../sass/_typography.scss */
+ul.ruby-links li p {
+  width: 80%;
+  padding: 0.2em 0;
+}
+
+/* line 188, ../sass/_typography.scss */
+.number {
+  display: inline-block;
+  padding-right: 11px;
+  color: #891438;
+  font-size: 19px;
+  font-weight: 500;
 }
 
 /* Base Stylesheet for General Styles */
@@ -763,7 +788,7 @@ footer {
 }
 
 /* line 112, ../sass/_base.scss */
-.resources-page {
+.resources-page, .past-events-page {
   padding: 0 0 7em 0;
 }
 
@@ -883,57 +908,63 @@ footer {
   .sponsor-details ul li img {
     width: 40%;
   }
+
+  /* line 117, ../sass/_mediaqueries.scss */
+  ul.ruby-links li p {
+    width: 100%;
+  }
 }
 @media all and (max-width: 660px) {
-  /* line 121, ../sass/_mediaqueries.scss */
+  /* line 125, ../sass/_mediaqueries.scss */
   .logo {
     float: left;
     padding-bottom: 15px;
   }
-  /* line 124, ../sass/_mediaqueries.scss */
+  /* line 128, ../sass/_mediaqueries.scss */
   .logo img {
     max-width: 120px;
   }
 
-  /* line 127, ../sass/_mediaqueries.scss */
+  /* line 131, ../sass/_mediaqueries.scss */
   h1 {
     font-size: 60px;
-    padding: 0 0 0.5em 0;
+    padding: 1.5em 0 0.5em 0;
   }
 
-  /* line 132, ../sass/_mediaqueries.scss */
+  /* line 136, ../sass/_mediaqueries.scss */
   .small-info a.red-btn {
     margin: 25px 0 0 0;
   }
 
-  /* line 136, ../sass/_mediaqueries.scss */
+  /* line 140, ../sass/_mediaqueries.scss */
   .main-event-details {
     padding: 70px 0 0 0;
   }
 }
 @media all and (max-width: 480px) {
-  /* line 146, ../sass/_mediaqueries.scss */
+  /* line 150, ../sass/_mediaqueries.scss */
   body {
     background: none;
   }
 
-  /* line 150, ../sass/_mediaqueries.scss */
+  /* line 154, ../sass/_mediaqueries.scss */
   h1 {
     font-size: 53px;
+    padding-top: 1.4em;
   }
 
-  /* line 154, ../sass/_mediaqueries.scss */
+  /* line 159, ../sass/_mediaqueries.scss */
   .main-event-details h3, .main-event-details p {
     font-size: 19px;
     line-height: 32px;
   }
 
-  /* line 160, ../sass/_mediaqueries.scss */
+  /* line 165, ../sass/_mediaqueries.scss */
   footer {
     padding: 2.5em 0;
   }
 
-  /* line 164, ../sass/_mediaqueries.scss */
+  /* line 169, ../sass/_mediaqueries.scss */
   footer .bio p, footer .contact li a {
     font-size: 19px;
   }
@@ -946,7 +977,7 @@ footer {
    Variables
    ============================ */
 /* Mobile header */
-/* line 7, ../sass/_sidr.scss */
+/* line 7, ../sass/_mobile.scss */
 header.mobile_nav {
   background: #891438;
   width: 100%;
@@ -955,7 +986,7 @@ header.mobile_nav {
   position: fixed;
   z-index: 1000;
 }
-/* line 14, ../sass/_sidr.scss */
+/* line 14, ../sass/_mobile.scss */
 header.mobile_nav a.belfastruby {
   float: left;
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
@@ -966,24 +997,24 @@ header.mobile_nav a.belfastruby {
   font-size: 14px;
   padding: 14px 0 0 13px;
 }
-/* line 23, ../sass/_sidr.scss */
+/* line 23, ../sass/_mobile.scss */
 header.mobile_nav a.belfastruby:active {
   color: #efefef;
 }
 
-/* line 29, ../sass/_sidr.scss */
+/* line 29, ../sass/_mobile.scss */
 .burger {
   float: right;
   height: 40px;
   width: 40px;
   background: url("../images/hamburger-white.svg") no-repeat;
-  background-size: 27px 36px;
+  background-size: 27px 39px;
   text-indent: -999999px;
   padding-right: 3px;
 }
 
 /* Slidey Mobile Nav */
-/* line 41, ../sass/_sidr.scss */
+/* line 41, ../sass/_mobile.scss */
 .sidr {
   display: none;
   position: absolute;
@@ -1000,34 +1031,34 @@ header.mobile_nav a.belfastruby:active {
   color: white;
 }
 
-/* line 57, ../sass/_sidr.scss */
+/* line 57, ../sass/_mobile.scss */
 .sidr_logo {
   width: 100%;
 }
-/* line 59, ../sass/_sidr.scss */
+/* line 59, ../sass/_mobile.scss */
 .sidr_logo img {
   padding: 20px 0 20px 60px;
   max-width: 110px;
 }
 
-/* line 65, ../sass/_sidr.scss */
+/* line 65, ../sass/_mobile.scss */
 #sidr {
   padding: 0;
   display: none;
 }
-/* line 68, ../sass/_sidr.scss */
+/* line 68, ../sass/_mobile.scss */
 #sidr ul {
   padding: 0;
   margin: 0;
 }
-/* line 71, ../sass/_sidr.scss */
+/* line 71, ../sass/_mobile.scss */
 #sidr ul li {
   width: 100%;
   color: white;
   text-align: center;
   list-style: none;
 }
-/* line 76, ../sass/_sidr.scss */
+/* line 76, ../sass/_mobile.scss */
 #sidr ul li a {
   font-family: "Proxima Nova" Helvetica, Arial, sans-serif;
   color: #efefef;
@@ -1040,12 +1071,12 @@ header.mobile_nav a.belfastruby:active {
   display: block;
   border-bottom: 1px solid #3c3c3c;
 }
-/* line 87, ../sass/_sidr.scss */
+/* line 87, ../sass/_mobile.scss */
 #sidr ul li a:active {
   color: white;
   background: #222222;
 }
-/* line 91, ../sass/_sidr.scss */
+/* line 91, ../sass/_mobile.scss */
 #sidr ul li a:hover {
   background: #222222;
 }

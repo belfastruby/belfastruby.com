@@ -113,6 +113,10 @@ a.red-btn{
       }
     }
   }
+
+  ul.ruby-links li p{
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 660px) {
@@ -126,7 +130,7 @@ a.red-btn{
 
 h1{
   font-size: 60px;
-  padding: 0 0 0.5em 0;
+  padding: 1.5em 0 0.5em 0;
 }
 
 .small-info a.red-btn{
@@ -149,6 +153,7 @@ h1{
 
   h1{
    font-size: 53px;
+   padding-top: 1.4em;
   }
 
   .main-event-details h3, .main-event-details p{
