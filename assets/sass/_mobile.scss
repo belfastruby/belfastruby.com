@@ -13,7 +13,7 @@ header.mobile_nav{
   z-index: 1000;
   a.belfastruby{
     float: left;
-    font-family: "proxima-nova" Helvetica, Arial, sans-serif;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
     color: $white;
     text-decoration: none;
     text-transform: uppercase;
@@ -74,7 +74,7 @@ header.mobile_nav{
       text-align: center;
       list-style: none;
       a {
-        font-family: "proxima-nova" Helvetica, Arial, sans-serif;
+        font-family: "proxima-nova", Helvetica, Arial, sans-serif;
         color: $light-bg-grey;
         text-decoration: none;
         text-transform: uppercase;

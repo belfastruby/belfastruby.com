@@ -1,0 +1,37 @@
+/* For using font Aleo*/
+
+
+
+@font-face {
+    font-family: 'Aleo-Italic';
+    src: url('../fonts/aleo-italic-webfont.eot');
+    src: url('../fonts/aleo-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo-italic-webfont.woff') format('woff'),
+         url('../fonts/aleo-italic-webfont.ttf') format('truetype'),
+         url('../fonts/aleo-italic-webfont.svg#aleoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo-Light';
+    src: url('../fonts/aleo-light-webfont.eot');
+    src: url('../fonts/aleo-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo-light-webfont.woff') format('woff'),
+         url('../fonts/aleo-light-webfont.ttf') format('truetype'),
+         url('../fonts/aleo-light-webfont.svg#aleolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Aleo-Regular';
+    src: url('../fonts/aleo-regular-webfont.eot');
+    src: url('../fonts/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo-regular-webfont.woff') format('woff'),
+         url('../fonts/aleo-regular-webfont.ttf') format('truetype'),
+         url('../fonts/aleo-regular-webfont.svg#aleoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

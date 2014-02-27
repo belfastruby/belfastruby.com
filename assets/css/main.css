@@ -1,4 +1,29 @@
 /* Main Stylesheet */
+/* For using font Aleo*/
+@font-face {
+  font-family: 'Aleo-Italic';
+  src: url("../fonts/aleo-italic-webfont.eot");
+  src: url("../fonts/aleo-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo-italic-webfont.woff") format("woff"), url("../fonts/aleo-italic-webfont.ttf") format("truetype"), url("../fonts/aleo-italic-webfont.svg#aleoitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aleo-Light';
+  src: url("../fonts/aleo-light-webfont.eot");
+  src: url("../fonts/aleo-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo-light-webfont.woff") format("woff"), url("../fonts/aleo-light-webfont.ttf") format("truetype"), url("../fonts/aleo-light-webfont.svg#aleolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aleo-Regular';
+  src: url("../fonts/aleo-regular-webfont.eot");
+  src: url("../fonts/aleo-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aleo-regular-webfont.woff") format("woff"), url("../fonts/aleo-regular-webfont.ttf") format("truetype"), url("../fonts/aleo-regular-webfont.svg#aleoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* ============================
    Variables
    ============================ */
@@ -405,7 +430,7 @@ ul, li {
    ============================ */
 /* line 5, ../sass/_typography.scss */
 body {
-  font-family: "Aleo-Regular", Georgia, serif;
+  font-family: "Aleo-Light", Georgia, serif;
   font-style: normal;
   font-weight: 100;
 }
@@ -416,68 +441,75 @@ h1, h2, h3, h4, .number, p {
 }
 
 /* line 15, ../sass/_typography.scss */
+h2, h3, h4 {
+  font-weight: normal;
+}
+
+/* line 19, ../sass/_typography.scss */
 h1 {
+  font-family: "Aleo-Regular", Georgia, serif;
   font-size: 100px;
   font-weight: 100;
   color: #4c4c4c;
   padding: 0 0 0.4em 0;
 }
 
-/* line 22, ../sass/_typography.scss */
+/* line 27, ../sass/_typography.scss */
 h2 {
-  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: #891438;
 }
-/* line 27, ../sass/_typography.scss */
+/* line 32, ../sass/_typography.scss */
 h2 .underline {
   border-bottom: 3px solid #891438;
   padding-bottom: 4px;
   font-weight: 600;
 }
 
-/* line 34, ../sass/_typography.scss */
+/* line 39, ../sass/_typography.scss */
 h3 {
   color: #494949;
   font-size: 20px;
   line-height: 2em;
   padding-bottom: 0.1em;
+  font-family: "Aleo-Regular", Georgia, serif;
 }
 
-/* line 41, ../sass/_typography.scss */
+/* line 47, ../sass/_typography.scss */
 p {
   color: #494949;
   font-size: 18px;
 }
-/* line 44, ../sass/_typography.scss */
+/* line 50, ../sass/_typography.scss */
 p .intro {
   font-size: 22px;
 }
-/* line 47, ../sass/_typography.scss */
+/* line 53, ../sass/_typography.scss */
 p a {
   color: #494949;
   text-decoration: underline;
 }
-/* line 50, ../sass/_typography.scss */
+/* line 56, ../sass/_typography.scss */
 p a:hover {
   text-decoration: none;
 }
 
-/* line 56, ../sass/_typography.scss */
+/* line 62, ../sass/_typography.scss */
 nav ul li a, .number {
-  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   color: #afafaf;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 300;
 }
-/* line 62, ../sass/_typography.scss */
+/* line 68, ../sass/_typography.scss */
 nav ul li a:hover, nav ul li a.active, .number:hover, .number.active {
   color: #494949;
 }
 
-/* line 67, ../sass/_typography.scss */
+/* line 73, ../sass/_typography.scss */
 a.red-btn {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
@@ -493,7 +525,7 @@ a.red-btn {
   color: #891438;
   cursor: pointer;
   display: inline-block;
-  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   min-width: 140px;
@@ -508,34 +540,34 @@ a.red-btn:hover {
   color: white;
 }
 
-/* line 72, ../sass/_typography.scss */
+/* line 78, ../sass/_typography.scss */
 .when-where {
-  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   list-style: none;
   font-size: 16px;
   line-height: 26px;
 }
-/* line 77, ../sass/_typography.scss */
+/* line 83, ../sass/_typography.scss */
 .when-where li {
   color: #4c4c4c;
 }
-/* line 80, ../sass/_typography.scss */
+/* line 86, ../sass/_typography.scss */
 .when-where a {
   color: #4c4c4c;
   text-decoration: underline;
 }
-/* line 83, ../sass/_typography.scss */
+/* line 89, ../sass/_typography.scss */
 .when-where a:hover {
   text-decoration: none;
 }
 
-/* line 89, ../sass/_typography.scss */
+/* line 95, ../sass/_typography.scss */
 .main-event-details {
   color: #494949;
   font-size: 18px;
   line-height: 27px;
 }
-/* line 93, ../sass/_typography.scss */
+/* line 99, ../sass/_typography.scss */
 .main-event-details h3 {
   font-size: 22px;
   line-height: 41px;
@@ -544,7 +576,7 @@ a.red-btn:hover {
   float: left;
   padding-right: 2%;
 }
-/* line 101, ../sass/_typography.scss */
+/* line 107, ../sass/_typography.scss */
 .main-event-details p {
   width: 48%;
   float: right;
@@ -552,15 +584,15 @@ a.red-btn:hover {
   padding-left: 2%;
 }
 
-/* line 110, ../sass/_typography.scss */
+/* line 116, ../sass/_typography.scss */
 .bar p {
   font-size: 16px;
-  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   text-align: center;
   line-height: 1.7em;
   padding: 1.2em 2em;
 }
-/* line 117, ../sass/_typography.scss */
+/* line 123, ../sass/_typography.scss */
 .bar a {
   margin-left: 6px;
   color: #494949;
@@ -569,14 +601,14 @@ a.red-btn:hover {
   padding-bottom: 2px;
   font-weight: 400;
 }
-/* line 124, ../sass/_typography.scss */
+/* line 130, ../sass/_typography.scss */
 .bar a:hover {
   text-decoration: none;
   border-color: #891438;
   color: #891438;
 }
 
-/* line 132, ../sass/_typography.scss */
+/* line 138, ../sass/_typography.scss */
 footer .bio p {
   color: white;
   margin: 0;
@@ -584,72 +616,72 @@ footer .bio p {
   line-height: 39px;
 }
 
-/* line 139, ../sass/_typography.scss */
+/* line 145, ../sass/_typography.scss */
 footer .contact li {
   list-style: none;
   line-height: 40px;
   font-size: 18px;
 }
-/* line 143, ../sass/_typography.scss */
+/* line 149, ../sass/_typography.scss */
 footer .contact li a {
   color: white;
   text-decoration: none;
 }
-/* line 147, ../sass/_typography.scss */
+/* line 153, ../sass/_typography.scss */
 footer .contact li i {
   padding-right: 4px;
 }
 
 /* Resources page */
-/* line 156, ../sass/_typography.scss */
+/* line 162, ../sass/_typography.scss */
 .resources-page h2 {
   padding-top: 2em;
 }
 
-/* line 161, ../sass/_typography.scss */
+/* line 167, ../sass/_typography.scss */
 ul.ruby-links {
   margin: 0;
 }
-/* line 163, ../sass/_typography.scss */
+/* line 169, ../sass/_typography.scss */
 ul.ruby-links h3 {
   padding-top: 1.2em;
   display: inline-block;
 }
-/* line 167, ../sass/_typography.scss */
+/* line 173, ../sass/_typography.scss */
 ul.ruby-links li {
   list-style: none;
   line-height: 25px;
 }
-/* line 170, ../sass/_typography.scss */
+/* line 176, ../sass/_typography.scss */
 ul.ruby-links li:last-child {
   padding-bottom: 1em;
 }
-/* line 173, ../sass/_typography.scss */
+/* line 179, ../sass/_typography.scss */
 ul.ruby-links li a {
   color: #407789;
   line-height: 35px;
 }
-/* line 176, ../sass/_typography.scss */
+/* line 182, ../sass/_typography.scss */
 ul.ruby-links li a:hover {
   color: #479ab6;
 }
-/* line 180, ../sass/_typography.scss */
+/* line 186, ../sass/_typography.scss */
 ul.ruby-links li h3 a {
   text-decoration: none;
   color: #494949;
   font-size: 20px;
 }
-/* line 184, ../sass/_typography.scss */
+/* line 190, ../sass/_typography.scss */
 ul.ruby-links li h3 a:hover {
   color: #891438;
 }
-/* line 188, ../sass/_typography.scss */
+/* line 194, ../sass/_typography.scss */
 ul.ruby-links li p {
   width: 80%;
   padding: 0.2em 0;
 }
 
-/* line 195, ../sass/_typography.scss */
+/* line 201, ../sass/_typography.scss */
 .number {
   display: inline-block;
   padding-right: 11px;
@@ -963,7 +995,7 @@ footer {
 
   /* line 150, ../sass/_mediaqueries.scss */
   h1 {
-    font-size: 53px;
+    font-size: 45px;
     padding-top: 1.4em;
   }
 
@@ -973,12 +1005,19 @@ footer {
     line-height: 32px;
   }
 
-  /* line 161, ../sass/_mediaqueries.scss */
+  /* line 160, ../sass/_mediaqueries.scss */
+  .bar p {
+    font-size: 14px;
+    line-height: 1.2em;
+    padding: 1em;
+  }
+
+  /* line 166, ../sass/_mediaqueries.scss */
   footer {
     padding: 2.5em 0;
   }
 
-  /* line 165, ../sass/_mediaqueries.scss */
+  /* line 170, ../sass/_mediaqueries.scss */
   footer .bio p, footer .contact li a {
     font-size: 19px;
   }
@@ -1003,7 +1042,7 @@ header.mobile_nav {
 /* line 14, ../sass/_mobile.scss */
 header.mobile_nav a.belfastruby {
   float: left;
-  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -1074,7 +1113,7 @@ header.mobile_nav a.belfastruby:active {
 }
 /* line 76, ../sass/_mobile.scss */
 #sidr ul li a {
-  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   color: #efefef;
   text-decoration: none;
   text-transform: uppercase;

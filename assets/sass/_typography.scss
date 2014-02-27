@@ -3,7 +3,7 @@
 @import "variables";
 
 body{
-  font-family: "Aleo-Regular", Georgia, serif;
+  font-family: "Aleo-Light", Georgia, serif;
   font-style: normal;
   font-weight: 100;
 }
@@ -12,7 +12,12 @@ h1, h2, h3, h4, .number, p{
   margin: 0;
 }
 
+h2, h3, h4{
+  font-weight: normal;
+}
+
 h1{
+  font-family: "Aleo-Regular", Georgia, serif;
   font-size: 100px;
   font-weight: 100;
   color: $dark-grey;
@@ -20,7 +25,7 @@ h1{
 }
 
 h2{
-  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: $ruby-red;
@@ -36,6 +41,7 @@ h3{
   font-size: 20px;
   line-height: 2em;
   padding-bottom: 0.1em;
+  font-family: "Aleo-Regular", Georgia, serif;
 }
 
 p{
@@ -54,7 +60,7 @@ p{
 }
 
 nav ul li a, .number{
-  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   color: $pale-grey;
   text-decoration: none;
   text-transform: uppercase;
@@ -70,7 +76,7 @@ a.red-btn{
 }
 
 .when-where{
-  font-family: "proxima-nova" Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   list-style: none;
   font-size: 16px;
   line-height: 26px;
@@ -109,7 +115,7 @@ a.red-btn{
 .bar {
   p {
     font-size: 16px;
-    font-family: "proxima-nova" Helvetica, Arial, sans-serif;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
     text-align: center;
     line-height: 1.7em;
     padding: 1.2em 2em;
