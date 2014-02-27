@@ -11,15 +11,10 @@ title: Past Meetups
       {% for post in site.posts %}
       <li>
         <span class="number">{{ post.number }}</span><h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-        <p>{{ post.description }}</p>
+        <p>{{ post.intro }}</p>
         <a href="{{ site.baseurl }}{{ post.url }}">Read More &raquo;</a>
       </li>
     {% endfor %}
     </ul>
   </section>
 </article>
-
-
-<!-- {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %} -->

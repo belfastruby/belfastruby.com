@@ -14,7 +14,12 @@ title: Upcoming Event
     </div>
   </section>
   <section class="main-event-details clearfix">
-    {{site.posts.first.content}}
+    <div class="intro">
+      <h3>{{site.posts.first.intro}}</h3>
+    </div>
+    <div class="content-bulk">
+      {{site.posts.first.content}}
+    </div>
   </section>
   <section class="sponsor-details clearfix">
     <h2><span class="underline">Event</span> Sponsors</h2>
@@ -26,7 +31,7 @@ title: Upcoming Event
       <li>
       {% endif %}
       <a href="{{sponsor.link}}">
-        <img src="{{sponsor.image}}" />
+        <img src="{{ site.baseurl }}{{sponsor.image}}" />
       </a>
       </li>
       {% endfor %}

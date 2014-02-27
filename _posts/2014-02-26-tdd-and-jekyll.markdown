@@ -1,8 +1,9 @@
 ---
 layout: post
 
+past: false
 number: "BR-12"
-title: "TDD &amp; Getting Started with Jekyll"
+title: "TDD &amp; Getting Started with&nbsp;Jekyll"
 when: Tuesday 4th March, 6.30pm
 location: ShopKeep POS, Alexander House (1st Floor), 17 Ormeau Avenue
 
@@ -12,11 +13,9 @@ register_link: "http://digitalcircle.org/events/belfast-ruby-tdd-getting-started
 
 sponsors: [{name: "Rumble Labs", image: "/assets/images/rumblelabs-logo.png", link: "http://rumblelabs.com"}, {name: "Shopkeep", image: "/assets/images/shopkeeppos.png", link: "http://shopkeeppos.com"}]
 
-description: "This month we're holding two talks catered to both the experienced Ruby developers and the newcomers. One talk focuses on using Test Driven Development methods in your development workflow, while one illustrates how to get started with Jekyll and Github pages."
+intro: "This month we're holding two talks catered to both the experienced Ruby developers and the newcomers. One talk focuses on using Test Driven Development methods in your development workflow, while one illustrates how to get started with Jekyll and Github pages."
 
 ---
-
-###This month we're holding two talks catered to both the experienced Ruby developers and the newcomers. One talk focuses on using Test Driven Development methods in your development workflow, while one illustrates how to get started with Jekyll and Github pages. We'll also be holding workshops to help you get set up after the talks.
 
 [Barry Gordon](http://www.twitter.com/brrygrdn) from [ShopKeep](http://shopkeep.com) will be talking about TDD, discussing how you can use the principles in your Ruby development process. He'll be lending a helping hand during the workshops with getting set up with TDD/Ruby learning tool, Ruby Koans.
 

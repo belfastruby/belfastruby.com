@@ -1,21 +1,6 @@
 ---
 layout: default
 ---
-<!-- <h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
-  <ul>
-  {% for sponsor in page.sponsors  %}
-    {{sponsor.name}}
-    <li>
-      <a href="{{sponsor.link}}"><img src="{{sponsor.image}}" /></a>
-    </li>
-  {% endfor %}
-  </ul>
-</div> -->
-
 <article class="meetup">
   <section class="top-details">
     <h1>{{page.title}}</h1>
@@ -28,8 +13,12 @@ layout: default
     </div>
   </section>
   <section class="main-event-details clearfix">
-
-    {{content}}
+    <div class="intro">
+      <h3>{{page.intro}}</h3>
+    </div>
+    <div class="content-bulk">
+      {{content}}
+    </div>
   </section>
   <section class="sponsor-details clearfix">
     <h2><span class="underline">Event</span> Sponsors</h2>
@@ -47,7 +36,7 @@ layout: default
       {% endfor %}
     </ul>
     <div class="bar">
-      <p>This event is kindly sponsored by these fine folks. Interested in sponsoring a meetup? <a href="#">Get in touch</a></p>
+      <p>This event is kindly sponsored by these fine folks. Interested in sponsoring a meetup? <a href="mailto:hello@rumblelabs.com">Get in touch</a></p>
     </div>
   </section>
 </article>

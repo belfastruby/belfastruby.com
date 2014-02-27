@@ -96,19 +96,23 @@ a.red-btn{
   color: $common-grey;
   font-size: 18px;
   line-height: 27px;
-  h3{
-    font-size: 22px;
-    line-height: 41px;
-    font-weight: 200;
+  .intro{
     width: 48%;
     float: left;
     padding-right: 2%;
+    h3{
+      font-size: 22px;
+      line-height: 41px;
+      font-weight: 200;
+    }
   }
-  p{
+  .content-bulk{
     width: 48%;
     float: right;
-    margin: 0 0 1.3em 0;
     padding-left: 2%;
+    p{
+      margin: 0 0 1.3em 0;
+    }
   }
 }
 

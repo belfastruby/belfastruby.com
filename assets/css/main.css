@@ -568,23 +568,29 @@ a.red-btn:hover {
   line-height: 27px;
 }
 /* line 99, ../sass/_typography.scss */
-.main-event-details h3 {
-  font-size: 22px;
-  line-height: 41px;
-  font-weight: 200;
+.main-event-details .intro {
   width: 48%;
   float: left;
   padding-right: 2%;
 }
-/* line 107, ../sass/_typography.scss */
-.main-event-details p {
+/* line 103, ../sass/_typography.scss */
+.main-event-details .intro h3 {
+  font-size: 22px;
+  line-height: 41px;
+  font-weight: 200;
+}
+/* line 109, ../sass/_typography.scss */
+.main-event-details .content-bulk {
   width: 48%;
   float: right;
-  margin: 0 0 1.3em 0;
   padding-left: 2%;
 }
+/* line 113, ../sass/_typography.scss */
+.main-event-details .content-bulk p {
+  margin: 0 0 1.3em 0;
+}
 
-/* line 116, ../sass/_typography.scss */
+/* line 120, ../sass/_typography.scss */
 .bar p {
   font-size: 16px;
   font-family: "proxima-nova", Helvetica, Arial, sans-serif;
@@ -592,7 +598,7 @@ a.red-btn:hover {
   line-height: 1.7em;
   padding: 1.2em 2em;
 }
-/* line 123, ../sass/_typography.scss */
+/* line 127, ../sass/_typography.scss */
 .bar a {
   margin-left: 6px;
   color: #494949;
@@ -601,14 +607,14 @@ a.red-btn:hover {
   padding-bottom: 2px;
   font-weight: 400;
 }
-/* line 130, ../sass/_typography.scss */
+/* line 134, ../sass/_typography.scss */
 .bar a:hover {
   text-decoration: none;
   border-color: #891438;
   color: #891438;
 }
 
-/* line 138, ../sass/_typography.scss */
+/* line 142, ../sass/_typography.scss */
 footer .bio p {
   color: white;
   margin: 0;
@@ -616,72 +622,72 @@ footer .bio p {
   line-height: 39px;
 }
 
-/* line 145, ../sass/_typography.scss */
+/* line 149, ../sass/_typography.scss */
 footer .contact li {
   list-style: none;
   line-height: 40px;
   font-size: 18px;
 }
-/* line 149, ../sass/_typography.scss */
+/* line 153, ../sass/_typography.scss */
 footer .contact li a {
   color: white;
   text-decoration: none;
 }
-/* line 153, ../sass/_typography.scss */
+/* line 157, ../sass/_typography.scss */
 footer .contact li i {
   padding-right: 4px;
 }
 
 /* Resources page */
-/* line 162, ../sass/_typography.scss */
+/* line 166, ../sass/_typography.scss */
 .resources-page h2 {
   padding-top: 2em;
 }
 
-/* line 167, ../sass/_typography.scss */
+/* line 171, ../sass/_typography.scss */
 ul.ruby-links {
   margin: 0;
 }
-/* line 169, ../sass/_typography.scss */
+/* line 173, ../sass/_typography.scss */
 ul.ruby-links h3 {
   padding-top: 1.2em;
   display: inline-block;
 }
-/* line 173, ../sass/_typography.scss */
+/* line 177, ../sass/_typography.scss */
 ul.ruby-links li {
   list-style: none;
   line-height: 25px;
 }
-/* line 176, ../sass/_typography.scss */
+/* line 180, ../sass/_typography.scss */
 ul.ruby-links li:last-child {
   padding-bottom: 1em;
 }
-/* line 179, ../sass/_typography.scss */
+/* line 183, ../sass/_typography.scss */
 ul.ruby-links li a {
   color: #407789;
   line-height: 35px;
 }
-/* line 182, ../sass/_typography.scss */
+/* line 186, ../sass/_typography.scss */
 ul.ruby-links li a:hover {
   color: #479ab6;
 }
-/* line 186, ../sass/_typography.scss */
+/* line 190, ../sass/_typography.scss */
 ul.ruby-links li h3 a {
   text-decoration: none;
   color: #494949;
   font-size: 20px;
 }
-/* line 190, ../sass/_typography.scss */
+/* line 194, ../sass/_typography.scss */
 ul.ruby-links li h3 a:hover {
   color: #891438;
 }
-/* line 194, ../sass/_typography.scss */
+/* line 198, ../sass/_typography.scss */
 ul.ruby-links li p {
   width: 80%;
   padding: 0.2em 0;
 }
 
-/* line 201, ../sass/_typography.scss */
+/* line 205, ../sass/_typography.scss */
 .number {
   display: inline-block;
   padding-right: 11px;
@@ -817,8 +823,8 @@ footer {
 
 /* line 101, ../sass/_base.scss */
 .bio {
-  width: 38%;
-  padding-right: 15%;
+  width: 40%;
+  padding-right: 10%;
   float: left;
 }
 
