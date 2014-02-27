@@ -1,3 +1,5 @@
 name: Belfast Ruby
 markdown: redcarpet
 pygments: true
+baseurl : /belfastruby.com
+
