@@ -8,7 +8,9 @@ when: Tuesday 4th February, 6.30pm
 location: Rumble Labs, 46 Hill Street
 
 directions: https://maps.google.com/maps?f=d&source=s_d&saddr=&hl=en&ie=UTF8&layer=c&daddr=The+Rumble+Laboratory+%4054.60231963589608,-5.927209854125977
+
 register_link: "http://digitalcircle.org/events/an-introduction-to-ruby"
+
 sponsors: [{name: "Rumble Labs", image: "../assets/images/rumblelabs-logo.png", link: "http://rumblelabs.com"}, {name: "Shopkeep", image: "../assets/images/shopkeeppos.png", link: "http://shopkeeppos.com"}, {name: "Brewbot", image: "../assets/images/brewbot.png", link: "http://brewbot.io"} ]
 
 description: "It’s our first Belfast Ruby event of the year so we hope to welcome back the regulars as well as plenty of new faces. We’ll be holding a few short talks focused on the theme of making the jump to Ruby and how to get started."
