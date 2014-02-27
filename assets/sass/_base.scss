@@ -76,11 +76,26 @@ ul.when-where{
     li{
     list-style: none;
     display: inline-block;
-    width: 33%;
-    min-width: 230px;
     text-align: center;
     }
   }
+}
+
+ul.sponsor-count-1 li{
+  width: 100%;
+}
+
+ul.sponsor-count-2 li{
+  width: 49%;
+}
+
+ul.sponsor-count-3 li{
+  width: 33%;
+  min-width: 230px;
+}
+
+ul.sponsor-count-4 li{
+  width: 25%;
 }
 
 .bar{

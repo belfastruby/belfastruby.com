@@ -3,7 +3,7 @@ layout: post
 
 past: false
 number: "BR-12"
-title: "TDD &amp; Getting Started with&nbsp;Jekyll"
+title: "TDD &amp; Getting Started with Jekyll"
 when: Tuesday 4th March, 6.30pm
 location: ShopKeep POS, Alexander House (1st Floor), 17 Ormeau Avenue
 

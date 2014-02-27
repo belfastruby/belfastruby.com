@@ -3,6 +3,12 @@
 
 /* Media Queries */
 
+@media all and (max-width: 1180px) {
+
+  h1{
+    font-size:88px;
+  }
+}
 
 @media all and (max-width: 1040px) {
 
@@ -11,7 +17,7 @@
 }
 
 .main-event-details{
-  h3, p{
+  .content-bulk, .intro{
     width: 100%;
   }
   h3{
