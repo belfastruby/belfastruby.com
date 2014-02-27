@@ -7,7 +7,7 @@ date:   2012-03-27 13:46:51
 when: Tuesday 27th March, 6.30pm
 location: 21 Social,  1 Hill Street, Cathedral Quarter
 
-directions: http://maps.google.co.uk/maps?q=21+Social&hl=en&ll=54.601095,-5.926309&spn=0.01018,0.025921&sll=54.592891,-5.929399&sspn=0.010182,0.025921&oq=21+social&vpsrc=6&hq=21+Social&t=m&z=16
+directions: "http://maps.google.co.uk/maps?q=21+Social&hl=en&ll=54.601095,-5.926309&spn=0.01018,0.025921&sll=54.592891,-5.929399&sspn=0.010182,0.025921&oq=21+social&vpsrc=6&hq=21+Social&t=m&z=16"
 
 register_link: "http://digitalcircle.org/events/ruby-without-rails"
 
