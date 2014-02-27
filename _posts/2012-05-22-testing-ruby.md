@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: post
 
+past: true
 number: "BR-3"
 title:  "Testing Ruby and Rails"
 date:   2014-01-30 13:46:51
@@ -11,7 +12,7 @@ directions: https://maps.google.com/maps?f=d&source=s_d&saddr=&hl=en&ie=UTF8&lay
 
 register_link: "http://digitalcircle.org/events/belfast-ruby-testing-ruby"
 
-sponsors: [{name: "Rumble Labs", image: "../assets/images/rumblelabs-logo.png", link: "http://rumblelabs.com"}, {name: "Shopkeep", image: "../assets/images/shopkeeppos.png", link: "http://shopkeeppos.com"}, {name: "Brewbot", image: "../assets/images/brewbot.png", link: "http://brewbot.io"} ]
+sponsors: [{name: "Rumble Labs", image: "/assets/images/rumblelabs-logo.png", link: "http://rumblelabs.com"}, {name: "Shopkeep", image: "/assets/images/shopkeeppos.png", link: "http://shopkeeppos.com"}, {name: "Brewbot", image: "/assets/images/brewbot.png", link: "http://brewbot.io"} ]
 
 description: "Testing can often be seen as a chore, or something that only testers do. This is an opportunity to peer into the world of agile testing practices were tests become the driver for how you build your code and the code's documentation, while providing a fast feedback mechanism, helping to ensure that your last push didn't bork anything."
 

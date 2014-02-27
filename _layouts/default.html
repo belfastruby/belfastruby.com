@@ -8,18 +8,18 @@
       <meta name="description" content="Belfast Ruby is a community of aspiring and experienced developers in Belfast, N.Ireland passionate about Ruby and Rails.">
 
       <!-- syntax highlighting CSS and Font Awesome -->
-      <link rel="stylesheet" href="assets/css/syntax.css">
+      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax.css">
       <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
       <!-- Custom CSS -->
-      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
       <!-- JQuery -->
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
       <script type="text/javascript" src="//use.typekit.net/tmx7bvo.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-      <script src="assets/js/all.js"></script>
-      <script src="assets/js/sidr.js"></script>
+      <script src="{{ site.baseurl }}/assets/js/all.js"></script>
+      <script src="{{ site.baseurl }}/assets/js/sidr.js"></script>
       <script>
       $(document).ready(function() {
         $('#burger').sidr({
@@ -55,12 +55,12 @@
           <nav>
             <ul>
               <li><a href="{{ site.baseurl }}/index.html" >Upcoming Event</a></li>
-              <li><a href="{{ site.baseurl }}/past-events.html">Past Events</a></li>
+              <li><a href="{{ site.baseurl }}/past-events.html" {% if page.past %}class="active"{% endif %}>Past Events</a></li>
               <li><a href="{{ site.baseurl }}/index.html#about" class="scroll-about">About</a></li>
               <li><a href="{{ site.baseurl }}/resources.html">Resources</a></li>
             </ul>
           </nav>
-          <div class="logo"><img src="./assets/images/belfast-ruby-logo.svg"></img></div>
+          <div class="logo"><img src="{{site.baseurl}}/assets/images/belfast-ruby-logo.svg"></img></div>
         </section>
       </header>
       <header class="mobile_nav clearfix">
@@ -70,10 +70,10 @@
           <div class="sidr_logo"><img src="./assets/images/belfast-ruby-logo.svg"></img></div>
           <nav>
             <ul>
-              <li><a href="/index.html">Upcoming Event</a></li>
-              <li><a href="/past-events.html">Past Events</a></li>
-              <li><a href="/index.html#about" class="scroll-about">About</a></li>
-              <li><a href="/resources.html">Resources</a></li>
+              <li><a href="{{ site.baseurl }}/index.html">Upcoming Event</a></li>
+              <li><a href="{{ site.baseurl }}/past-events.html">Past Events</a></li>
+              <li><a href="{{ site.baseurl }}/index.html#about" class="scroll-about">About</a></li>
+              <li><a href="{{ site.baseurl }}/resources.html">Resources</a></li>
             </ul>
           </nav>
         </div>
@@ -90,7 +90,7 @@
           </div>
           <div class="contact">
             <li><a href="http://twitter.com/belfastruby"><i class="fa fa-twitter"></i> @BelfastRuby</a> on Twitter</li>
-            <li><a href="http://twitter.com/belfastruby"><i class="fa fa-github-alt"></i> belfastruby</a>on Github</li>
+            <li><a href="http://twitter.com/belfastruby"><i class="fa fa-github-alt"></i> belfastruby</a> on Github</li>
             <li><a href="http://twitter.com/belfastruby"><i class="fa fa-google-plus-square"></i> Google Group</a></li>
           </div>
         </section>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 
 number: "BR-11"
 title:  "An Introduction to Ruby & Rails"

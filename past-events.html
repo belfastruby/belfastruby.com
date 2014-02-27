@@ -10,9 +10,9 @@ title: Past Meetups
     <ul class="ruby-links">
       {% for post in site.posts %}
       <li>
-        <span class="number">{{ post.number }}</span><h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <span class="number">{{ post.number }}</span><h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
         <p>{{ post.description }}</p>
-        <a href="{{ post.url }}">Read More &raquo;</a>
+        <a href="{{ site.baseurl }}{{ post.url }}">Read More &raquo;</a>
       </li>
     {% endfor %}
     </ul>
