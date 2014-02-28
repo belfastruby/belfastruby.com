@@ -16,11 +16,3 @@ $(document).ready(function(){
       });
   }
 });
-
-$(document).ready(function(){
-  if (!event.preventDefault) {
-      event.preventDefault = function() {
-          event.returnValue = false; //ie
-      };
-  }
-});

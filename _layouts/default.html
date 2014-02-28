@@ -25,9 +25,11 @@
       <script src="{{ site.baseurl }}/assets/js/sidr.js"></script>
       <script>
       $(document).ready(function() {
-        alert("Hi im working");
         $('#burger').sidr({
-          side: 'right'
+          side: 'right',
+          onOpen: function(){
+            alert("Working mate");
+          }
         });
       });
       </script>
