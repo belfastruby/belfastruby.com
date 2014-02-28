@@ -25,12 +25,20 @@
       <script src="{{ site.baseurl }}/assets/js/sidr.js"></script>
       <script>
       $(document).ready(function() {
-        $('#burger').sidr({
-          side: 'right',
-          onOpen: function(){
-            alert("Working mate");
-          }
+        $('#burger').click(function() {
+
+          alert('Hello');
+
+          $.sidr('open', 'sidr');
+
         });
+
+        //.sidr({
+        //  side: 'right',
+        //  onOpen: function(){
+        //    alert("Working mate");
+        //  }
+        //});
       });
       </script>
       <!--[if lt IE 9]>
