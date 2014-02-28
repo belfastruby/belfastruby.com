@@ -25,6 +25,13 @@
       <script src="{{ site.baseurl }}/assets/js/sidr.js"></script>
       <script>
       $(document).ready(function() {
+
+        $('#burger').on('touch', function() {
+
+            alert('I have been touched');
+
+        })
+
         $('#burger').sidr({
           side: 'right',
           onOpen: function(){
