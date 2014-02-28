@@ -25,24 +25,17 @@
       <script src="{{ site.baseurl }}/assets/js/sidr.js"></script>
       <script>
       $(document).ready(function() {
-
         $('#burger').sidr({
-
           side: 'right',
           displace: true
-
         });
-
         $('#burger').click(function() {
           $.sidr('open', 'sidr');
           $(this).addClass('open-burger');
         });
-
         $('.open-burger').on('click', function() {
-
           $.sidr('close', 'sidr');
           $(this).removeClass('open-burger');
-
         });
       });
       </script>
@@ -109,7 +102,7 @@
       <footer class="clearfix">
         <section class="container clearfix">
           <div class="bio">
-            <p>Belfast Ruby is community of aspiring and experienced developers in Belfast, Northern Ireland. We're passionate about Ruby and Rails, holding monthly meetups to learn and share, yeah!</p>
+            <p>Belfast Ruby is community of aspiring and experienced developers in Belfast, Northern Ireland. We're passionate about Ruby and Rails, holding monthly meetups to learn and share.</p>
           </div>
           <div class="contact">
             <li><a href="http://twitter.com/belfastruby"><i class="fa fa-twitter"></i> @BelfastRuby on Twitter</a></li>
