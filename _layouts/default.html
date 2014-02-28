@@ -35,6 +35,14 @@
 
         $('#burger').click(function() {
           $.sidr('open', 'sidr');
+          $(this).addClass('open-burger');
+        });
+
+        $('.open-burger').click(function() {
+
+          $.sidr('close', 'sidr');
+          $(this).removeClass('open-burger');
+
         });
       });
       </script>
