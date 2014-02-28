@@ -1,13 +1,4 @@
 $(document).ready(function(){
-
-  $(".scroll-about").click(function(e) {
-      e.preventDefault();
-      $('html, body').animate({
-          scrollTop: $("#about").offset().top
-      }, 1000);
-  });
-
-
   $(function () {
       setNavigation();
   });
@@ -24,5 +15,12 @@ $(document).ready(function(){
           }
       });
   }
+});
 
+$(document).ready(function(){
+  if (!event.preventDefault) {
+      event.preventDefault = function() {
+          event.returnValue = false; //ie
+      };
+  }
 });
