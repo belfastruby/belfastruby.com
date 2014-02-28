@@ -862,6 +862,12 @@ footer {
   padding: 0 0 7em 0;
 }
 
+/* IE fixes */
+/* line 136, ../sass/_base.scss */
+.ie8 body {
+  background: url(../images/ruby-shape.png) no-repeat top right;
+}
+
 /* ============================
    Variables
    ============================ */

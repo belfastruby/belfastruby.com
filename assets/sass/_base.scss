@@ -131,4 +131,10 @@ footer{
   padding:0 0 7em 0;
 }
 
+/* IE fixes */
+
+.ie8 body{
+  background: url(../images/ruby-shape.png) no-repeat top right;
+}
+
 
