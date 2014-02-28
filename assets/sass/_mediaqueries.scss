@@ -44,6 +44,29 @@ h1{
 
 }
 
+@media all and (max-width: 885px) {
+
+.sponsor-details ul {
+    padding: 1.7em 0 1em 0;
+    li{
+      width: 100%;
+      text-align: center;
+      padding: 2.1em 0;
+      border-top: solid 1px $light-bg-grey;
+      border-left: solid 1px $light-bg-grey;
+      border-right: solid 1px $light-bg-grey;
+      &:last-child{
+        border-bottom: solid 1px $light-bg-grey;
+        padding-bottom: 2.1em;
+      }
+      img{
+        width: 40%;
+        max-width:230px;
+      }
+    }
+  }
+
+}
 
 @media all and (max-width: 850px) {
 
@@ -58,19 +81,6 @@ h1{
 a.red-btn{
   display: block;
   margin: 15px 0 0 0;
-  }
-}
-
-.sponsor-details ul li{
-  width: 100%;
-  text-align: left;
-  padding-bottom: 3.5em;
-  &:last-child{
-    padding-bottom: 0;
-  }
-  img{
-    width: 40%;
-    max-width:230px;
   }
 }
 
@@ -96,24 +106,6 @@ a.red-btn{
 
   .sponsor-details{
     padding: 45px 0;
-  }
-
-  .sponsor-details ul {
-    padding: 1.7em 0 1em 0;
-    li{
-      text-align: center;
-      padding: 2.1em 0;
-      border-top: solid 1px $light-bg-grey;
-      border-left: solid 1px $light-bg-grey;
-      border-right: solid 1px $light-bg-grey;
-      &:last-child{
-        border-bottom: solid 1px $light-bg-grey;
-        padding-bottom: 2.1em;
-      }
-      img{
-        width: 40%;
-      }
-    }
   }
 
   ul.ruby-links li p{
@@ -143,6 +135,20 @@ h1{
   padding: 70px 0 0 0;
 }
 
+.sponsor-details ul {
+    padding: 1.7em 0 1em 0;
+    li{
+      padding: 1.6em 0;
+      &:last-child{
+        border-bottom: solid 1px $light-bg-grey;
+        padding-bottom: 1.6em;
+      }
+      img{
+        width: 60%;
+      }
+    }
+  }
+
 }
 
 
@@ -158,9 +164,9 @@ h1{
    padding-top: 1.4em;
   }
 
-  .main-event-details h3, .main-event-details p{
-    font-size: 19px;
-    line-height: 32px;
+  .main-event-details .intro h3, .main-event-details p{
+    font-size: 18px;
+    line-height: 29px;
   }
 
   .bar p{
@@ -174,7 +180,9 @@ h1{
   }
 
   footer .bio p, footer .contact li a{
-    font-size: 19px;
+    font-size: 18px;
+    line-height: 29px;
+
   }
 
 }

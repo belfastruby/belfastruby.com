@@ -23,7 +23,7 @@ title: Upcoming Event
   </section>
   <section class="sponsor-details clearfix">
     <h2><span class="underline">Event</span> Sponsors</h2>
-     <ul class="sponsor-count-{{posts.first.sponsors.size}}">
+     <ul class="sponsor-count-{{site.posts.first.sponsors.size}}">
       {% for sponsor in site.posts.first.sponsors  %}
       {% if sponsor.name == "rumble" %}
       <li class="rumble">

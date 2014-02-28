@@ -12,7 +12,7 @@ directions: https://maps.google.com/maps?f=d&source=s_d&saddr=&hl=en&ie=UTF8&lay
 
 register_link: "http://digitalcircle.org/events/belfast-ruby-an-introduction-to-spree-commerce"
 
-sponsors: [{name: "Rumble Labs", image: "/assets/images/rumblelabs-logo.png", link: "http://rumblelabs.com"}, {name: "Exam Time", image: "/assets/images/exam-time-logo.png", link: "http://examtime.com"}, {name: "Spree Commerce", image: "/assets/images/spree-logo.png", link: "http://spreecommerce.com/"} ]
+sponsors: [{name: "Rumble Labs", image: "/assets/images/rumblelabs-logo.png", link: "http://rumblelabs.com"}, {name: "Exam Time", image: "/assets/images/examtime-logo.png", link: "http://examtime.com"}, {name: "Spree Commerce", image: "/assets/images/spree-logo.png", link: "http://spreecommerce.com/"} ]
 
 intro: "If you ever wanted to build an ecommerce website, in Rails, this would be a great talk to come along to."
 
