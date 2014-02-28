@@ -59,16 +59,41 @@ p{
   }
 }
 
+/* Header */
+
+.about-top p{
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+  color: $light-bg-grey;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.mobile_nav a.belfastruby{
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+  color: $light-bg-grey;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.07em;
+}
+
 nav ul li a, .number{
   font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   color: $pale-grey;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 300;
+  letter-spacing: 0.07em;
   &:hover, &.active{
    color: $common-grey;
   }
+  &.active{
+    font-weight: 400;
+  }
 }
+
+/* Main Event Details */
 
 a.red-btn{
   @include btn;
@@ -139,6 +164,8 @@ a.red-btn{
   }
 }
 
+/* Footer */
+
 footer .bio p{
   color: $white;
   margin: 0;
@@ -197,10 +224,13 @@ ul.ruby-links{
     }
     p{
       width: 80%;
+      max-width: 780px;
       padding: 0.2em 0;
     }
   }
 }
+
+/* Past Events Page */
 
 .number{
   display: inline-block;

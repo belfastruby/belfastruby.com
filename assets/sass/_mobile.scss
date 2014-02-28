@@ -13,15 +13,9 @@ header.mobile_nav{
   z-index: 1000;
   a.belfastruby{
     float: left;
-    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
-    color: $white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 14px;
-    padding: 14px 0 0 13px;
+    padding: 12px 0 0 20px;
     &:active{
-      color: $light-bg-grey;
+      color: $white;
     }
   }
 }
@@ -59,6 +53,18 @@ header.mobile_nav{
   img{
     padding: 20px 0 20px 60px;
     max-width: 110px;
+  }
+}
+
+.sidr_bio{
+  width: 100%;
+  border-bottom: 1px solid $sidebar-border;
+  p{
+    text-align: center;
+    color: $light-bg-grey;
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    padding: 0.5em 1.2em 1.5em 1.2em;
   }
 }
 
