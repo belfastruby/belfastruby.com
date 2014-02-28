@@ -38,7 +38,7 @@
           $(this).addClass('open-burger');
         });
 
-        $('.open-burger').click(function() {
+        $('.open-burger').on('click', function() {
 
           $.sidr('close', 'sidr');
           $(this).removeClass('open-burger');
