@@ -39,8 +39,8 @@ h2{
 h3{
   color: $common-grey;
   font-size: 20px;
-  line-height: 2em;
-  padding-bottom: 0.1em;
+  line-height: 1.2em;
+  padding: 1em 0 0.4em 0;
   font-family: "Aleo-Regular", Georgia, serif;
 }
 
@@ -191,25 +191,30 @@ footer .contact li{
 
 .resources-page{
   h2{
-    padding-top: 2em;
+    padding: 1.5em 0 0.5em 0;
   }
 }
 
 ul.ruby-links{
   margin: 0;
   h3{
-    padding-top: 1.2em;
     display: inline-block;
+    padding-top: 0.2em;
   }
   li{
     list-style: none;
     line-height: 25px;
+    padding-top: 2.3em;
+    &:first-child{
+      padding-top: 1em;
+    }
     &:last-child{
       padding-bottom: 1em;
     }
     a{
       color: $blue-link;
-      line-height: 35px;
+      padding: 5px 0 5px 0;
+      display: inline-block;
       &:hover{
         color: $blue-link-hover;
       }
@@ -229,6 +234,7 @@ ul.ruby-links{
     }
   }
 }
+
 
 /* Past Events Page */
 

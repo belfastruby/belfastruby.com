@@ -472,8 +472,8 @@ h2 .underline {
 h3 {
   color: #494949;
   font-size: 20px;
-  line-height: 2em;
-  padding-bottom: 0.1em;
+  line-height: 1.2em;
+  padding: 1em 0 0.4em 0;
   font-family: "Aleo-Regular", Georgia, serif;
 }
 
@@ -668,7 +668,7 @@ footer .contact li i {
 /* Resources page */
 /* line 193, ../sass/_typography.scss */
 .resources-page h2 {
-  padding-top: 2em;
+  padding: 1.5em 0 0.5em 0;
 }
 
 /* line 198, ../sass/_typography.scss */
@@ -677,38 +677,44 @@ ul.ruby-links {
 }
 /* line 200, ../sass/_typography.scss */
 ul.ruby-links h3 {
-  padding-top: 1.2em;
   display: inline-block;
+  padding-top: 0.2em;
 }
 /* line 204, ../sass/_typography.scss */
 ul.ruby-links li {
   list-style: none;
   line-height: 25px;
+  padding-top: 2.3em;
 }
-/* line 207, ../sass/_typography.scss */
+/* line 208, ../sass/_typography.scss */
+ul.ruby-links li:first-child {
+  padding-top: 1em;
+}
+/* line 211, ../sass/_typography.scss */
 ul.ruby-links li:last-child {
   padding-bottom: 1em;
 }
-/* line 210, ../sass/_typography.scss */
+/* line 214, ../sass/_typography.scss */
 ul.ruby-links li a {
   color: #407789;
-  line-height: 35px;
+  padding: 5px 0 5px 0;
+  display: inline-block;
 }
-/* line 213, ../sass/_typography.scss */
+/* line 218, ../sass/_typography.scss */
 ul.ruby-links li a:hover {
   color: #479ab6;
 }
-/* line 217, ../sass/_typography.scss */
+/* line 222, ../sass/_typography.scss */
 ul.ruby-links li h3 a {
   text-decoration: none;
   color: #494949;
   font-size: 20px;
 }
-/* line 221, ../sass/_typography.scss */
+/* line 226, ../sass/_typography.scss */
 ul.ruby-links li h3 a:hover {
   color: #891438;
 }
-/* line 225, ../sass/_typography.scss */
+/* line 230, ../sass/_typography.scss */
 ul.ruby-links li p {
   width: 80%;
   max-width: 780px;
@@ -716,7 +722,7 @@ ul.ruby-links li p {
 }
 
 /* Past Events Page */
-/* line 235, ../sass/_typography.scss */
+/* line 241, ../sass/_typography.scss */
 .number {
   display: inline-block;
   padding-right: 11px;
@@ -1080,8 +1086,8 @@ footer {
 
   /* line 162, ../sass/_mediaqueries.scss */
   h1 {
-    font-size: 45px;
-    padding-top: 1.4em;
+    font-size: 38px;
+    padding: 2.4em 0 0.9em 0;
   }
 
   /* line 167, ../sass/_mediaqueries.scss */
