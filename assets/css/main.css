@@ -1097,18 +1097,23 @@ footer {
   }
 
   /* line 172, ../sass/_mediaqueries.scss */
+  .main-event-details {
+    padding: 55px 0 0 0;
+  }
+
+  /* line 176, ../sass/_mediaqueries.scss */
   .bar p {
     font-size: 14px;
     line-height: 1.2em;
     padding: 1em;
   }
 
-  /* line 178, ../sass/_mediaqueries.scss */
+  /* line 182, ../sass/_mediaqueries.scss */
   footer {
     padding: 2.5em 0;
   }
 
-  /* line 182, ../sass/_mediaqueries.scss */
+  /* line 186, ../sass/_mediaqueries.scss */
   footer .bio p, footer .contact li a {
     font-size: 18px;
     line-height: 29px;
