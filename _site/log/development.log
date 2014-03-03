@@ -1,0 +1,104 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-03 11:56:42 +0000
+Connecting to database specified by database.yml
+Processing by SiteController#index as HTML
+  Rendered site/index.html.haml within layouts/application (9.6ms)
+Compiled reset.css  (65ms)  (pid 59744)
+Compiled typography.css  (18ms)  (pid 59744)
+Compiled scaffolding.css  (11ms)  (pid 59744)
+Compiled main.css  (39ms)  (pid 59744)
+Compiled application.css  (219ms)  (pid 59744)
+  Rendered layouts/_stylesheets.html.haml (282.2ms)
+Compiled jquery.js  (30ms)  (pid 59744)
+Compiled jquery_ujs.js  (0ms)  (pid 59744)
+Compiled jquery.highlight.js  (0ms)  (pid 59744)
+Compiled application.js  (117ms)  (pid 59744)
+  Rendered layouts/_head.html.haml (442.5ms)
+  Rendered layouts/_flashes.html.haml (1.7ms)
+  Rendered layouts/_javascripts.html.haml (0.7ms)
+Completed 200 OK in 530ms (Views: 529.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-03-03 11:56:43 +0000
+Served asset /reset.css - 200 OK (9ms)
+
+
+Started GET "/assets/typography.css?body=1" for 127.0.0.1 at 2014-03-03 11:56:43 +0000
+Served asset /typography.css - 200 OK (18ms)
+
+
+Started GET "/assets/scaffolding.css?body=1" for 127.0.0.1 at 2014-03-03 11:56:43 +0000
+Served asset /scaffolding.css - 200 OK (8ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-03-03 11:56:43 +0000
+Served asset /main.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-03 11:56:43 +0000
+Served asset /jquery.js - 200 OK (40ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-03 11:56:43 +0000
+Served asset /jquery_ujs.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery.highlight.js?body=1" for 127.0.0.1 at 2014-03-03 11:56:43 +0000
+Served asset /jquery.highlight.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-03 11:56:43 +0000
+Served asset /application.js - 200 OK (8ms)
+
+
+Started GET "/assets/belfast-ruby-logo.png" for 127.0.0.1 at 2014-03-03 11:56:43 +0000
+Served asset /belfast-ruby-logo.png - 200 OK (5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-03 11:56:43 +0000
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/submit-btn.png" for 127.0.0.1 at 2014-03-03 11:56:43 +0000
+Served asset /submit-btn.png - 200 OK (6ms)
+
+
+Started GET "/assets/rumblelabs-logo.png" for 127.0.0.1 at 2014-03-03 11:56:43 +0000
+Served asset /rumblelabs-logo.png - 200 OK (4ms)
+
+
+Started GET "/assets/shopkeep-logo.png" for 127.0.0.1 at 2014-03-03 11:56:43 +0000
+Served asset /shopkeep-logo.png - 200 OK (5ms)
+
+
+Started GET "/assets/header-background.png" for 127.0.0.1 at 2014-03-03 11:56:44 +0000
+Served asset /header-background.png - 200 OK (7ms)
+
+
+Started GET "/assets/icons/cal-icon-small.png" for 127.0.0.1 at 2014-03-03 11:56:44 +0000
+Served asset /icons/cal-icon-small.png - 200 OK (11ms)
+
+
+Started GET "/assets/icons/location-icon-small.png" for 127.0.0.1 at 2014-03-03 11:56:44 +0000
+Served asset /icons/location-icon-small.png - 200 OK (57ms)
+
+
+Started GET "/assets/icons/note-icon-small.png" for 127.0.0.1 at 2014-03-03 11:56:44 +0000
+Served asset /icons/note-icon-small.png - 200 OK (5ms)
+
+
+Started GET "/assets/icons/github-icon-small.png" for 127.0.0.1 at 2014-03-03 11:56:44 +0000
+Served asset /icons/github-icon-small.png - 200 OK (5ms)
+
+
+Started GET "/assets/icons/irc-icon-small.png" for 127.0.0.1 at 2014-03-03 11:56:44 +0000
+Served asset /icons/irc-icon-small.png - 200 OK (6ms)
+
+
+Started GET "/assets/icons/group-icon-small.png" for 127.0.0.1 at 2014-03-03 11:56:44 +0000
+Served asset /icons/group-icon-small.png - 200 OK (8ms)
+
+
+Started GET "/assets/icons/twitter-icon-small.png" for 127.0.0.1 at 2014-03-03 11:56:44 +0000
+Served asset /icons/twitter-icon-small.png - 200 OK (8ms)

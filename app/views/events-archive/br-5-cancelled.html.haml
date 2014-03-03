@@ -1,0 +1,51 @@
+      .vevent
+        %h2.summary BR-5: Shipping It: Optimising Application Deployment
+        -# this event was postponed and ultimately cancelled as Build Special happened instead.
+
+        %h3.when-icon.icon When?
+        %p
+          %span.dtstart
+            - date_string = '2012-11-6'
+            - date = Date.parse date_string
+            %abbr.value{ :title => "#{date_string}" } #{date.strftime("#{date.day.ordinalize} %B, %Y")}
+            %span.value 6:30pm
+
+        %h3.where-icon.icon
+          Where?
+          %a.get-directions{ :href => "https://maps.google.com/maps?f=d&source=s_d&saddr=&hl=en&ie=UTF8&layer=c&daddr=54.599297,-5.9242997", :title => "Examtime"} Get Directions
+
+        %p.location
+          Examtime Limited
+          %br
+          1st Floor, 83-85 Victoria Street, Belfast, BT1 4PB
+
+        %h3.what-icon.icon What?
+        %p.description
+          So, you've built a great product. Now you have to ship it! Getting your code in front of users is the last hurdle, but gone are the days of having to actually mail it... but why stop there! Tonight's talks will feature discussion on the current state of Ruby deployment and just how fast we can reach our users.
+
+        %h4 Zero Downtime Deployments with Unicorn
+        %p.description
+          David Kennedy of <a href="http://www.examtime.com/">Examtime</a> will present about how they have improved their infrastructure to allow for zero downtime deployments.</p>
+
+        %h4 Shipping It
+        %p.description
+          David Rice of <a href="http://rumblelabs.com">Rumble Labs</a> will present about some strategies used to improve efficiency and reliability of application deployment, by harnessing the power of robots. </p>
+
+        %a.url.cta{:href=> "http://digitalcircle.org/events/belfast-ruby-shipping-it-optimising-application-deployment"} Attend Meetup >
+
+
+%aside#sidebar
+  %ul.sponsors
+    %h3 This months sponsors
+    -# %li.sponsor
+      -# %a{ :href => "http://spreecommerce.com/", :title => "Spree Commerce"}
+        -# = image_tag "spree-logo.png", :alt => "Spree Commerce", :class => "sponsor-logo"
+    %li.sponsor
+      %a{ :href => "http://examtime.com", :title => "Exam Time"}
+        = image_tag "exam-time-logo.png", :alt => "Exam Time", :class => "sponsor-logo"
+    %li.sponsor
+      %a{ :href => "http://rumblelabs.com", :title => "Rumble Labs"}
+        = image_tag "rumble-labs-logo.png", :alt => "Rumble Labs", :class => "sponsor-logo"
+    -# %li.sponsor
+      -# %a{ :href => "http://digitalcircle.org/", :title => "Digital Circle"}
+        -# = image_tag "digital-circle-logo.png", :alt => "Digital Circle", :class => "sponsor-logo"

@@ -1,0 +1,50 @@
+      .vevent
+        %h2.summary BR-3: Testing Ruby and Rails
+
+        %h3.when-icon.icon When?
+        %p
+          %span.dtstart
+            - date_string = '2012-04-22'
+            - date = Date.parse date_string
+            %abbr.value{ :title => "#{date_string}" } #{date.strftime("#{date.day.ordinalize} %B, %Y")}
+            %span.value 6:30pm
+
+        %h3.where-icon.icon
+          Where?
+          %a.get-directions{ :href => "http://maps.google.co.uk/maps?q=rumble+labs+belfast&hl=en&ll=54.592891,-5.929399&spn=0.010592,0.026436&hq=rumble+labs&hnear=Belfast,+United+Kingdom&t=m&z=16&vpsrc=0", :title => "Show me the way to Rumble Labs"} Get Directions
+
+        %p.location
+          The Rumble Laboratory
+          %br
+          21 Ormeau Avenue, Belfast, BT2 8HD
+
+        %h3.what-icon.icon What?
+        %p.description
+          Testing can often be seen as a chore, or something that only testers do. This is an opportunity to peer into the world of agile testing practices were tests become the driver for how you build your code and the code's documentation, while providing a fast feedback mechanism, helping to ensure that your last push didn't bork anything.
+        %h3
+          Behaviour Driven Development
+
+        %p.description
+          A look at using the <a href="http://en.wikipedia.org/wiki/Behavior_Driven_Development">Behaviour Driven Development</a> (BDD) Methodology with Ruby to create well tested and documented and tested code which meets the needs of the requirements and nothing more.
+          By <a href="https://twitter.com/#!/zakgrant">Zak Grant</a> of <a href="http://rumblelabs.com">Rumble Labs</a>
+
+        %h3 RSPEC - Y U SO SLOW?
+
+        %p.description
+          A case study looking at how ExamTime use TDD technologies on some real projects, the issues we've faced integrating the various different libraries, and how we use CI to pull everything together.
+          By David Kennedy of <a href="http://www.examtime.com">ExamTime</a>
+
+        %a.url.cta{:href=> "http://digitalcircle.org/events/belfast-ruby-testing-ruby"} Attend Meetup >
+
+  %aside#sidebar
+    %ul.sponsors
+      %h3 This months sponsors
+      %li.sponsor
+        %a{ :href => "http://examtime.com", :title => "Exam Time"}
+          = image_tag "exam-time-logo.png", :alt => "Exam Time", :class => "sponsor-logo"
+      %li.sponsor
+        %a{ :href => "http://rumblelabs.com", :title => "Rumble Labs"}
+          = image_tag "rumble-labs-logo.png", :alt => "Rumble Labs", :class => "sponsor-logo"
+      %li.sponsor
+        %a{ :href => "http://digitalcircle.org/", :title => "Digital Circle"}
+          = image_tag "digital-circle-logo.png", :alt => "Digital Circle", :class => "sponsor-logo"

@@ -1,0 +1,47 @@
+      .vevent
+        %h2.summary BR-5: Build Conf Special
+
+        %h3.when-icon.icon When?
+        %p
+          %span.dtstart
+            - date_string = '2012-11-14'
+            - date = Date.parse date_string
+            %abbr.value{ :title => "#{date_string}" } #{date.strftime("#{date.day.ordinalize} %B, %Y")}
+            %span.value 5:00pm
+
+        %h3.where-icon.icon
+          Where?
+          %a.get-directions{ :href => "https://maps.google.com/maps?f=d&source=s_d&saddr=&hl=en&ie=UTF8&layer=c&daddr=The+Rumble+Laboratory+%4054.59289,-5.929398", :title => "Rumble Laboratory"} Get Directions
+
+        %p.location
+          The Rumble Laboratory
+          %br
+          2nd Floor, 21 Ormeau Avenue, Belfast, BT2 8HD
+
+        %h3.what-icon.icon What?
+        %p.description
+          A special,
+          %a{:href => 'http://buildconf.com/'} Build Conf
+          Belfast Ruby event will be taking place on Wednesday 14th November. We’ve managed to convince a few awesome Rubyists attending Build to come do some lightning talks (5-10 minutes). The lineup is still being finalised but confirmed so far we have
+          %a{:href => 'https://twitter.com/elliottkember'} Elliott Kember
+          and
+          %a{:href => 'https://twitter.com/jasoncale'} Jason Cale.
+          %p Everyone is welcome to attend Belfast Ruby (not just Build attendees) so come on round if you fancy something a bit more technical during Build week. If you want to do a Ruby lightning talk, you're most welcome.
+
+        %a.url.cta{:href=> "http://digitalcircle.org/events/belfast-ruby-build-conf-special"} Attend Meetup >
+
+%aside#sidebar
+  %ul.sponsors
+    %h3 This month's sponsors
+    -# %li.sponsor
+      -# %a{ :href => "http://examtime.com", :title => "Exam Time"}
+        -# = image_tag "exam-time-logo.png", :alt => "Exam Time", :class => "sponsor-logo"
+    %li.sponsor
+      %a{ :href => "http://rumblelabs.com", :title => "Rumble Labs"}
+        = image_tag "rumble-labs-logo.png", :alt => "Rumble Labs", :class => "sponsor-logo"
+    %li.sponsor
+      %a{ :href => "http://buildconf.com/", :title => "Build Conf"}
+        = image_tag "build-logo.png", :alt => "Build Conf", :class => "sponsor-logo"
+    -# %li.sponsor
+      -# %a{ :href => "http://digitalcircle.org/", :title => "Digital Circle"}
+        -# = image_tag "digital-circle-logo.png", :alt => "Digital Circle", :class => "sponsor-logo"

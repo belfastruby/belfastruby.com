@@ -1,0 +1,45 @@
+      .vevent
+        %h2.summary BR-9: Vagrant - Shipping your dev box
+
+        %h3.when-icon.icon When?
+        %p
+          %span.dtstart
+            - date_string = '2013-09-03'
+            - date = Date.parse date_string
+            %abbr.value{ :title => "#{date_string}" } #{date.strftime("#{date.day.ordinalize} %B, %Y")}
+            %span.value 6:30pm
+
+        %h3.where-icon.icon
+          Where?
+          %a.get-directions{ :href => "http://maps.google.com/maps?f=d&source=s_d&saddr=&hl=en&ie=UTF8&layer=c&daddr=The%20Rumble%20Laboratory%20@54.60231963589608,-5.927209854125977", :title => "The Rumble Laboratory"} Get Directions
+
+        %p.location
+          The Rumble Laboratory
+          %br
+          2nd Floor, 46 Hill Street, Belfast, BT1 2LB
+
+        %h3.what-icon.icon What?
+        %p.description
+          Ruby developers have access to some great tools to maintain their working environments. Bundler, RVM and rubyenv have given us the ability to move between legacy and beta versions for different projects cleanly and easily - but what about other dependencies like database packages?
+
+          I'd like to introduce Vagrant as a tool that sets out to solve 'works on my machine' head scratching and brings the repeatability and automation of modern production environments back into developer's hands.
+
+          Talk by @brrygrdn
+
+        %a.url.cta{:href=> "http://digitalcircle.org/events/belfast-ruby-vagrant-shipping-your-dev-box"} Attend Meetup >
+
+%aside#sidebar
+  %ul.sponsors
+    %h3 This month's sponsor
+    -# %li.sponsor
+      -# %a{ :href => "http://examtime.com", :title => "Exam Time"}
+        -# = image_tag "exam-time-logo.png", :alt => "Exam Time", :class => "sponsor-logo"
+    %li.sponsor
+      %a{ :href => "http://rumblelabs.com", :title => "Rumble Labs"}
+        = image_tag "rumble-labs-logo.png", :alt => "Rumble Labs", :class => "sponsor-logo"
+    -# %li.sponsor
+      -# %a{ :href => "http://buildconf.com/", :title => "Build Conf"}
+        -# = image_tag "build-logo.png", :alt => "Build Conf", :class => "sponsor-logo"
+    -# %li.sponsor
+      -# %a{ :href => "http://digitalcircle.org/", :title => "Digital Circle"}
+        -# = image_tag "digital-circle-logo.png", :alt => "Digital Circle", :class => "sponsor-logo"

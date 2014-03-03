@@ -1,0 +1,65 @@
+      .vevent
+        %h2.summary BR-2: Ruby without Rails
+
+        %h3.when-icon.icon When?
+        %p
+          %span.dtstart
+            - date_string = '2012-03-27'
+            - date = Date.parse date_string
+            %abbr.value{ :title => "#{date_string}" } #{date.strftime("#{date.day.ordinalize} %B, %Y")}
+            %span.value 6:30pm
+
+        %h3.where-icon.icon
+          Where?
+          %a.get-directions{ :href => "http://maps.google.co.uk/maps?q=21+Social&hl=en&ll=54.601095,-5.926309&spn=0.01018,0.025921&sll=54.592891,-5.929399&sspn=0.010182,0.025921&oq=21+social&vpsrc=6&hq=21+Social&t=m&z=16", :title => "Show me the way to 21 Social"} Get Directions
+
+        %p.location
+          21 Social
+          %br
+          1 Hill Street, Cathedral Quarter, Belfast, BT1 2LA
+
+        %h3.what-icon.icon What?
+        %p.description
+          At our
+          %a{:href => 'http://digitalcircle.org/events/making-the-jump-to-ruby'} first Meetup
+          we covered an introduction to Ruby the language and one of it's major uses, <a href="http://rubyonrails.org">Ruby on Rails</a>.
+
+        %p.description
+          The reality is though, that Ruby can be used with much more. This is a chance to see what Ruby without Rails can let you do. For this evening we have two short talks that cover different approaches in using Ruby to develop web applications.
+
+        %h3
+          An Introduction to Sinatra
+
+        %p.description
+          We will be having a brief talk about another use of Ruby for web development, <a href="http://sinatrarb.com">Sinatra</a>. Sinatra is a <a href="http://en.wikipedia.org/wiki/Domain-specific_language">Domain Specific Language</a> for quickly creating web applications in Ruby with minimal effort.
+          By <a href="http://stevenwilkin.com/">Steven Wilkin</a>.
+
+        %h3
+          Minimalist Rails and Rack
+
+        %p.description
+          We're going to look at what is possible when you take the Rails stack to the bare minimum. We'll also take a detour to
+          %a{:href => "https://github.com/chneukirchen/rack"} Rack
+          the modular web server interface Rails now supports and the flexibility and power that provides.
+          By
+          %a{:href => "http://davidjrice.co.uk"} David Rice
+          of <a href="http://rumblelabs.com">Rumble Labs</a>.
+
+        %p.description
+          After it will be time to get hacking on any project you like! Our experts in black t-shirts will be roaming around answering questions and lending a hand. So come along, sit down with a beer and get coding.
+        %a.url.cta{:href=> "http://digitalcircle.org/events/ruby-without-rails"} Attend Meetup >
+
+  %aside#sidebar
+    %ul.sponsors
+      %li.sponsor
+        %a{ :href => "http://rumblelabs.com", :title => "Rumble Labs"}
+          %span.sponsor-tag Sponsor
+          = image_tag "rumble-labs-logo.png", :alt => "Rumble Labs", :class => "sponsor-logo"
+      %li.sponsor
+        %a{ :href => "http://digitalcircle.org/", :title => "Digital Circle"}
+          %span.sponsor-tag Sponsor
+          = image_tag "digital-circle-logo.png", :alt => "Digital Circle", :class => "sponsor-logo"
+      %li.sponsor
+        %a{ :href => "http://airpointofsale.com/", :title => "Airpos"}
+          %span.sponsor-tag Sponsor
+          = image_tag "airpos-logo.png", :alt => "Airpos", :class => "sponsor-logo"

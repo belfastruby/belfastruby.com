@@ -1,0 +1,41 @@
+      .vevent
+        %h2.summary BR-7: Rails 4.0.0 - What's New?
+
+        %h3.when-icon.icon When?
+        %p
+          %span.dtstart
+            - date_string = '2013-07-02'
+            - date = Date.parse date_string
+            %abbr.value{ :title => "#{date_string}" } #{date.strftime("#{date.day.ordinalize} %B, %Y")}
+            %span.value 6:30pm
+
+        %h3.where-icon.icon
+          Where?
+          %a.get-directions{ :href => "http://maps.google.com/maps?f=d&source=s_d&saddr=&hl=en&ie=UTF8&layer=c&daddr=The%20Rumble%20Laboratory%20@54.60231963589608,-5.927209854125977", :title => "The Rumble Laboratory"} Get Directions
+
+        %p.location
+          The Rumble Laboratory
+          %br
+          2nd Floor, 46 Hill Street, Belfast, BT1 2LB
+
+        %h3.what-icon.icon What?
+        %p.description
+          With the recent release of Rails 4.0.0 on 25 June 2013, we figured it would be the perfect time to get an introduction to some of the differences from previous versions and the new features introduced, whilst celebrating over a few beers.  David Rice will do the honours.
+
+        %a.url.cta{:href=> "http://digitalcircle.org/events/belfast-ruby-rails-400-whats-new"} Attend Meetup >
+
+%aside#sidebar
+  %ul.sponsors
+    %h3 This month's sponsor
+    -# %li.sponsor
+      -# %a{ :href => "http://examtime.com", :title => "Exam Time"}
+        -# = image_tag "exam-time-logo.png", :alt => "Exam Time", :class => "sponsor-logo"
+    %li.sponsor
+      %a{ :href => "http://rumblelabs.com", :title => "Rumble Labs"}
+        = image_tag "rumble-labs-logo.png", :alt => "Rumble Labs", :class => "sponsor-logo"
+    -# %li.sponsor
+      -# %a{ :href => "http://buildconf.com/", :title => "Build Conf"}
+        -# = image_tag "build-logo.png", :alt => "Build Conf", :class => "sponsor-logo"
+    -# %li.sponsor
+      -# %a{ :href => "http://digitalcircle.org/", :title => "Digital Circle"}
+        -# = image_tag "digital-circle-logo.png", :alt => "Digital Circle", :class => "sponsor-logo"
