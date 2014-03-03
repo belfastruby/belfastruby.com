@@ -13,7 +13,7 @@ register_link: "http://digitalcircle.org/events/belfast-ruby-tdd-getting-started
 
 sponsors: [{name: "Rumble Labs", image: "/assets/images/rumblelabs-logo.png", link: "http://rumblelabs.com"}, {name: "Shopkeep", image: "/assets/images/shopkeeppos-logo.png", link: "http://shopkeep.com"}]
 
-intro: "This month we're holding two talks catered to both the experienced Ruby developers and the newcomers. One talk focuses on using Test Driven Development methods in your development workflow, while one illustrates how to get started with Jekyll and GitHub Pages."
+intro: "This month we're holding two talks catered to both the experienced Ruby developers and the newcomers. One talk focuses on using Test Driven Development methods in your development workflow, while the other illustrates how to get started with Jekyll and GitHub Pages."
 
 ---
 
