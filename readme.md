@@ -6,7 +6,7 @@ We hold monthly meetups which are open to everyone.
 
 ##Open Sourced - Get Involved
 
-This website is open sourced so that the community can get involved in its development and contribute whatever they can. Please refer to the Github Issues to view a list of bugs or suggested improvements. Feel free to work on these, then when you've committed the changes send a pull request or attach it to the related issue so we can merge it in.
+This website is open sourced so that the community can get involved in its development and contribute whatever they can. Please refer to the GitHub Issues to view a list of bugs or suggested improvements. Feel free to work on these, then when you've committed the changes send a pull request or attach it to the related issue so we can merge it in.
 
 ### Ideas for Features or Improvements
 
