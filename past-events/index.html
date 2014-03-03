@@ -10,12 +10,14 @@ selected: past-events
   <section class="clearfix past-events-page">
     <ul class="ruby-links">
       {% for post in site.posts %}
+      {% if post.past %}
       <li>
         <span class="number">{{ post.number }}</span><h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
         <p>{{ post.intro }}</p>
         <a href="{{ site.baseurl }}{{ post.url }}">Read More &raquo;</a>
       </li>
-    {% endfor %}
+      {% endif %}
+      {% endfor %}
     </ul>
   </section>
 </article>
