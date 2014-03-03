@@ -71,9 +71,9 @@
         <section class="container container-header">
           <nav>
             <ul>
-              <li><a href="{{ site.baseurl }}/">Upcoming Event</a></li>
-              <li><a href="{{ site.baseurl }}/past-events/" {% if page.past %}class="active"{% endif %}>Past Events</a></li>
-              <li><a href="{{ site.baseurl }}/resources/">Resources</a></li>
+              <li><a href="{{ site.baseurl }}/" {% if page.selected == "upcoming" %}class="active"{% endif %}>Upcoming Event</a></li>
+              <li><a href="{{ site.baseurl }}/past-events/" {% if page.past or page.selected == "past-events" %}class="active"{% endif %}>Past Events</a></li>
+              <li><a href="{{ site.baseurl }}/resources/" {% if page.selected == "resources" %}class="active"{% endif %}>Resources</a></li>
             </ul>
           </nav>
           <a href="{{site.baseurl}}/" class="logo"><img src="{{site.baseurl}}/assets/images/belfast-ruby-logo.png"></img></a>
