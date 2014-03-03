@@ -1,40 +1,38 @@
 # Belfast Ruby
 
-Belfast Ruby is community of aspiring and experienced developers in Belfast, Northern Ireland passionate about Ruby and Rails.
-We hold monthly meetups which are open to everyone.
 
-This website is open sourced so that the community can get involved in its development and contribute whatever they can. Please refer to the Github Issues to view a list of bugs or suggested improvements. Feel free to work on these and attach a pull request to the issue.
+## Getting Stared
 
-## Dependencies
+First, make sure all dependencies are met (see bottom).
 
-### Bundler
-
-This will install all gems required to run the app.
+### Bundler 
 
     gem install bundler
-    cd belfastruby.com
+    cd belfastruby
     bundle install
 
-This site is built on Jekyll. Please refer to its documentation for help http://jekyllrb.com/docs/home/
+### Database
 
+    rake db:create
+    rake db:migrate
 
-### Compass
+### Runing the server
 
-To use sass, Compass is being used. Edit scss within sass folder, do not edit the css files directly.
-To install and watch scss files for changes:
+    # In a new window
+    cd belfastruby
+    rails s
+    open http://0.0.0.0:3000
 
-    gem install compass
-    compass install compass
-    compass watch
+### Other Dependencies
 
+To get started with the application locally, you'll need Ruby 1.9.2 (using RVM)
+  
+#### Update to Ruby 1.9.2
 
-### Run site locally
-
-To run the site in your browser locally and watch for any changes made use:
-
-    jekyll serve --watch
-
-Edit
-
-
+    # This didn't work for me, using the instructions on this page did: http://beginrescueend.com/rvm/install/ [NP]
+    bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
+    # Add this to the bottom of the file ~/.bash_profile
+    [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+    rvm install 1.9.2
+    rvm use 1.9.2 --default
 

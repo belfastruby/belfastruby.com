@@ -1,0 +1,290 @@
+@import "partials/color";
+
+
+/* Golbal Styles for Mobile & devices which don't support Media Queries
+-------------------------------------------------------------------------------*/
+
+body {
+  background-color: $backgroundLight;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+/* Header */
+#header-container {
+  background: $backgroundDark image-url('header-background.png');
+  height: 100px;
+  border-bottom: 1px solid #fff;
+}
+.site-logo {
+  display:block;
+  margin-bottom: 0;
+  width: 120px;
+  margin: 0 auto;
+  position: relative;
+  bottom: -20px;
+  z-index: 100;
+  a {
+    display:block;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.tagline {
+  font-weight: normal;
+  text-align: center;
+  color: $brandPink;
+  font-size: .875rem ; /* 14/16 */
+  line-height: 140%;
+  margin: 50px auto 0 auto;
+  padding: 0 10px;
+  width: 280px;
+
+}
+
+.icon {
+  padding-left: 26px;
+  background: transparent image-url('icons/note-icon-small.png') no-repeat left center;
+  &.when-icon {    background-image: image-url('icons/cal-icon-small.png');      }
+  &.where-icon {   background-image: image-url('icons/location-icon-small.png'); }
+  &.twitter-icon { background-image: image-url('icons/twitter-icon-small.png');  }
+  &.github-icon {  background-image: image-url('icons/github-icon-small.png');   }
+  &.group-icon {   background-image: image-url('icons/group-icon-small.png');    }
+  &.irc-icon {     background-image: image-url('icons/irc-icon-small.png');      }
+  &.meetup-icon {  background-image: image-url('icons/meetup-icon-small.png');   }
+}
+
+
+
+.social-list {
+  li {
+    font-size: 1.153846154em; /* 15/13 */
+    line-height: 213%; /* 32/15 */
+  }
+}
+
+
+/* Sponsors */
+
+
+.sponsor {
+  display: block;
+  background-color: #fff;
+  border: 1px solid #E5E5E5;
+  position: relative;
+  overflow: hidden;
+  width: 130px;
+  float: left;
+  margin: 0 20px 20px 0;
+  a {
+    display: block;
+    width: 100%;
+  }
+  &:hover {
+    border: 1px solid #ccc;
+    img {
+      opacity: 0.8;
+    }
+    .sponsor-tag {
+      background-color: #ccc;
+    }
+  }
+}
+
+.sponsor-tag {
+  display: block;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  z-index: 2000;
+  font-family: "ocr-a-std",sans-serif;
+  font-size: .5625em; /* 9/16 */
+  letter-spacing: .125em ; /* 2/16*/
+  line-height: 120%;
+  padding: 2px 4px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #E5E5E5;
+}
+
+.sponsor-logo {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  padding-top:6px;
+}
+
+.get-directions {
+  font-size: 12px;
+}
+
+
+/* Events */
+
+.cta {
+  display: block;
+  background-color: $brandPink;
+  color: #fff;
+  font-family: "ocr-a-std",sans-serif;
+  font-size: .75em; /* 12/16*/
+  letter-spacing: .25em ; /* 4/16*/
+  text-transform: uppercase;
+  text-align: center;
+  width: 220px;
+  font-weight: normal;
+  padding: 8px 0 6px 0;
+  &:hover {
+    background-color: $textColorRed;
+    color: #fff;
+  }
+
+}
+
+.submit-btn {
+
+  float: left;
+  -webkit-appearance:none;
+
+}
+
+.email-field {
+  width: 166px;
+  padding: 9px 10px;
+  border: 1px solid #E5E5E5;
+  font-size: 13px ;
+  float: left;
+  margin-right: 2px;
+  -webkit-appearance:none;
+}
+
+.email-form-wrapper {
+  position: relative;
+  overflow: auto;
+}
+
+.previous {
+  margin: 45px 0 20px 0;
+  h3 {
+    margin-bottom: 15px;
+  }
+  ul {
+    border-top: 1px solid #d7d7d9;
+    li {
+      border-bottom: 1px solid #d7d7d9;
+      a {
+        padding: 10px 0;
+        display: block;
+      }
+    }
+  }
+}
+
+
+
+
+/* Flash */
+#flash {
+  position: relative;
+}
+
+.notice, .alert {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  max-width: 600px;
+  padding: 7px 15px;
+  margin-bottom: 18px;
+  color: #404040;
+  background-color: #eedc94;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: #eedc94 #eedc94 #e4c652;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-width: 1px;
+  border-style: solid;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+   p{
+     margin-bottom: 0;
+     color: #fff;
+   }
+}
+
+.notice {
+  background-color: #57A957;
+}
+
+.alert {
+  background-color: #C43C35;
+}
+
+
+
+
+/* Global Styles for devices starting at 720px width (Tablets)
+-------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 720px) {
+
+  #header-container {
+    height: 170px;
+  }
+
+  .site-logo {
+    float: left;
+    bottom: -40px;
+  }
+  .tagline {
+    float: right;
+    width: 73.5294118%; /* 500/680 */
+    text-align: left;
+    color: #fff;
+    font-size: 1.125rem ;/* 18/16 */
+    line-height: 155.5555%;
+  }
+
+}
+
+
+/* Global Styles for devices starting at 1280px width (Large Format)
+-------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1000px) {
+
+  #header-container {
+     height: 180px;
+   }
+
+   .site-logo {
+     width: 240px;
+   }
+
+   .tagline {
+     font-size: 1.5625em; /* 25/16*/
+     width: 670px; /* 680/1000 */
+     padding: 0;
+   }
+
+   .sponsors {
+     margin-top:32px;
+     margin-left: 20px;
+     h3 {
+       padding: 0 0 5px; 
+     }
+   }
+
+   .sponsor {
+     width: 200px;
+    }
+
+    .sponsor-tag {
+     padding: 6px;
+    }
+
+
+
+}

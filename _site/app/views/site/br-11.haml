@@ -1,0 +1,101 @@
+%div#content
+  %div.col.one
+    %section.section
+      %h1 Meetups
+      %p Our meetups are open to all experience levels, from total novices to expert Rubyists. Do come along!
+
+      .vevent
+        %h2.summary An Introduction to Ruby
+
+        %h3.when-icon.icon When?
+        %p
+          %span.dtstart
+            - date_string = '2014-02-04'
+            - date = Date.parse date_string
+            %abbr.value{ :title => "#{date_string}" } #{date.strftime("#{date.day.ordinalize} %B, %Y")}
+            %span.value 6:30pm
+
+        %h3.where-icon.icon
+          Where?
+          %a.get-directions{ :href => "http://maps.google.com/maps?f=d&source=s_d&saddr=&hl=en&ie=UTF8&layer=c&daddr=The%20Rumble%20Laboratory%20@54.60231963589608,-5.927209854125977", :title => "The Rumble Laboratory"} Get Directions
+
+        %p.location
+          The Rumble Laboratory
+          %br
+          2nd Floor, 46 Hill Street, Belfast, BT1 2LB
+
+        %h3.what-icon.icon What?
+        %p.description
+          For our first Belfast Ruby meetup of 2014 we’ll be holding a few short talks focused on making the jump to Ruby, open to people of all experience levels.
+          Bring your laptop along too if you'd like some help with getting set up.
+          Drinks and snacks will be provided, so do come along.
+
+        %a.url.cta{:href=> "http://digitalcircle.org/events/an-introduction-to-ruby"} Attend Meetup >
+      .previous
+        %h3 Previous Meetups
+        %ul
+          %li= link_to 'BR-10: Lightning Talks', 'http://digitalcircle.org/events/belfast-ruby-lightning-talks'
+          %li= link_to 'BR-9: Vagrant: Shipping your dev box', 'http://digitalcircle.org/events/belfast-ruby-vagrant-shipping-your-dev-box'
+          %li= link_to 'BR-8: Let\'s talk about testing', 'http://digitalcircle.org/events/belfast-ruby-lets-talk-about-testing'
+          %li= link_to 'BR-7: Rails 4.0.0: What\'s New?', 'http://digitalcircle.org/events/belfast-ruby-rails-400-whats-new'
+          %li= link_to 'BR-6: A brief intro to Neo4j', 'http://digitalcircle.org/events/belfast-ruby-a-brief-intro-to-neo4j'
+          %li= link_to 'BR-5: Build Conf Special', 'http://digitalcircle.org/events/belfast-ruby-build-conf-special'
+          %li= link_to 'BR-4: An Introduction to Spree Commerce', 'http://digitalcircle.org/events/belfast-ruby-an-introduction-to-spree-commerce'
+          %li= link_to 'BR-3: Testing Ruby', 'http://digitalcircle.org/events/belfast-ruby-testing-ruby'
+          %li= link_to 'BR-2: Ruby without Rails', 'http://digitalcircle.org/events/ruby-without-rails'
+          %li= link_to 'BR-1: Making the Jump to Ruby', 'http://digitalcircle.org/events/making-the-jump-to-ruby'
+
+  .col.two
+    %section.section
+      %h1 Training
+      %p Are you interested in learning Ruby? There are currently no teaching courses available in Northern Ireland for Ruby and Rails. If enough interest is shown Belfast Ruby will help organise a training course.
+
+      %h3#interest_message Declare your interest in Ruby training
+      .email-form-wrapper
+        = form_for :interested_user, :url => '/interested_users', :method => :post, :remote => true do |f|
+          = f.text_field :email, :class => "email-field", :placeholder => "Your email address"
+          = f.submit 'SUBMIT', :class => "submit-button", :src => "assets/submit-btn.png", :type => "image"
+
+    %section.section
+      %h1 Elsewhere
+      %ul.social-list
+        %li.icon.twitter-icon
+          Follow
+          %a{ :href => "https://twitter.com/belfastruby", :title => "Belfast Ruby on Twitter"} @belfastruby
+          on twitter
+        %li.icon.github-icon
+          %a{ :href => "https://github.com/belfastruby", :title => "Belfast Ruby on Github"} belfastruby
+          on github
+        %li.icon.group-icon
+          %a{ :href => "http://groups.google.com/group/belfastruby", :title => "Belfast Ruby Google Group"} Google Group
+        %li.icon.irc-icon
+          %a{:href => "irc://irc.freenode.net/##belfastruby", :title => "Belfast Ruby IRC Channel"} ##belfastruby
+          IRC channel
+        -# %li.icon.meetup-icon
+          -# %a{ :href => "https://github.com/belfastruby", :title => "Belfast Ruby Meetup Profile"} Meetup.com
+          -# Profile
+
+
+
+%aside#sidebar
+  %ul.sponsors
+    %h3 This month's sponsors
+    -# %li.sponsor
+      -# %a{ :href => "http://examtime.com", :title => "Exam Time"}
+        -# = image_tag "exam-time-logo.png", :alt => "Exam Time", :class => "sponsor-logo"
+    %li.sponsor
+      %a{ :href => "http://rumblelabs.com", :title => "Rumble Labs"}
+        = image_tag "rumblelabs-logo.png", :alt => "Rumble Labs", :class => "sponsor-logo"
+    %li.sponsor
+      %a{ :href => "http://brewbot.io", :title => "Brewbot"}
+        = image_tag "brewbot-logo.png", :alt => "Brewbot", :class => "sponsor-logo"
+    %li.sponsor
+      %a{ :href => "http://shopkeep.com", :title => "Shopkeep"}
+        = image_tag "shopkeep-logo.png", :alt => "Shopkeep", :class => "sponsor-logo"
+    -# %li.sponsor
+      -# %a{ :href => "http://buildconf.com/", :title => "Build Conf"}
+        -# = image_tag "build-logo.png", :alt => "Build Conf", :class => "sponsor-logo"
+    -# %li.sponsor
+      -# %a{ :href => "http://digitalcircle.org/", :title => "Digital Circle"}
+        -# = image_tag "digital-circle-logo.png", :alt => "Digital Circle", :class => "sponsor-logo"
+
