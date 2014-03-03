@@ -1200,41 +1200,41 @@ header.mobile_nav a.belfastruby:active {
   }
 }
 @media all and (max-width: 480px) {
-  /* line 158, ../sass/_mediaqueries.scss */
+  /* line 156, ../sass/_mediaqueries.scss */
   body {
     background: none;
   }
 
-  /* line 162, ../sass/_mediaqueries.scss */
+  /* line 160, ../sass/_mediaqueries.scss */
   h1 {
     font-size: 38px;
     padding: 2.2em 0 0.5em 0;
   }
 
-  /* line 167, ../sass/_mediaqueries.scss */
+  /* line 165, ../sass/_mediaqueries.scss */
   .main-event-details .intro h3, .main-event-details p {
     font-size: 18px;
     line-height: 29px;
   }
 
-  /* line 172, ../sass/_mediaqueries.scss */
+  /* line 170, ../sass/_mediaqueries.scss */
   .main-event-details {
     padding: 70px 0 0 0;
   }
 
-  /* line 176, ../sass/_mediaqueries.scss */
+  /* line 174, ../sass/_mediaqueries.scss */
   .bar p {
     font-size: 14px;
     line-height: 1.2em;
     padding: 1em;
   }
 
-  /* line 182, ../sass/_mediaqueries.scss */
+  /* line 180, ../sass/_mediaqueries.scss */
   footer {
     padding: 2.5em 0;
   }
 
-  /* line 186, ../sass/_mediaqueries.scss */
+  /* line 184, ../sass/_mediaqueries.scss */
   footer .bio p, footer .contact li a {
     font-size: 18px;
     line-height: 29px;
