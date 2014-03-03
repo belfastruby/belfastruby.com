@@ -1151,14 +1151,13 @@ header.mobile_nav a.belfastruby:active {
   float: right;
   height: 40px;
   width: 40px;
-  background: url("../images/hamburger-white.svg") no-repeat;
-  background-size: 27px 39px;
+  background: url("../images/burger-menu.png") no-repeat 0 10px;
   text-indent: -999999px;
   padding-right: 3px;
 }
 
 /* Slidey Mobile Nav */
-/* line 35, ../sass/_mobile.scss */
+/* line 34, ../sass/_mobile.scss */
 .sidr {
   display: none;
   position: absolute;
@@ -1175,22 +1174,22 @@ header.mobile_nav a.belfastruby:active {
   color: white;
 }
 
-/* line 51, ../sass/_mobile.scss */
+/* line 50, ../sass/_mobile.scss */
 .sidr_logo {
   width: 100%;
 }
-/* line 53, ../sass/_mobile.scss */
+/* line 52, ../sass/_mobile.scss */
 .sidr_logo img {
   padding: 20px 0 20px 60px;
   max-width: 110px;
 }
 
-/* line 59, ../sass/_mobile.scss */
+/* line 58, ../sass/_mobile.scss */
 .sidr_bio {
   width: 100%;
   border-bottom: 1px solid #3c3c3c;
 }
-/* line 62, ../sass/_mobile.scss */
+/* line 61, ../sass/_mobile.scss */
 .sidr_bio p {
   text-align: center;
   color: #efefef;
@@ -1199,24 +1198,24 @@ header.mobile_nav a.belfastruby:active {
   padding: 0.5em 1.2em 1.5em 1.2em;
 }
 
-/* line 71, ../sass/_mobile.scss */
+/* line 70, ../sass/_mobile.scss */
 #sidr {
   padding: 0;
   display: none;
 }
-/* line 74, ../sass/_mobile.scss */
+/* line 73, ../sass/_mobile.scss */
 #sidr ul {
   padding: 0;
   margin: 0;
 }
-/* line 77, ../sass/_mobile.scss */
+/* line 76, ../sass/_mobile.scss */
 #sidr ul li {
   width: 100%;
   color: white;
   text-align: center;
   list-style: none;
 }
-/* line 82, ../sass/_mobile.scss */
+/* line 81, ../sass/_mobile.scss */
 #sidr ul li a {
   font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   color: #efefef;
@@ -1229,12 +1228,12 @@ header.mobile_nav a.belfastruby:active {
   display: block;
   border-bottom: 1px solid #3c3c3c;
 }
-/* line 93, ../sass/_mobile.scss */
+/* line 92, ../sass/_mobile.scss */
 #sidr ul li a.active {
   color: white;
   background: #222222;
 }
-/* line 97, ../sass/_mobile.scss */
+/* line 96, ../sass/_mobile.scss */
 #sidr ul li a:hover {
   background: #222222;
 }
