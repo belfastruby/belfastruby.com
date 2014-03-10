@@ -1,11 +1,15 @@
-# Belfast Ruby
+# Belfast Ruby - Old Website
+
+This is the previous version of the Belfast Ruby website. The new website was launched at the Belfast Ruby meetup of March 2014.
+
+We created a new repo for the new site, check it out or contribute code here - https://github.com/belfastruby/belfastruby-website
 
 
 ## Getting Stared
 
 First, make sure all dependencies are met (see bottom).
 
-### Bundler 
+### Bundler
 
     gem install bundler
     cd belfastruby
@@ -26,7 +30,7 @@ First, make sure all dependencies are met (see bottom).
 ### Other Dependencies
 
 To get started with the application locally, you'll need Ruby 1.9.2 (using RVM)
-  
+
 #### Update to Ruby 1.9.2
 
     # This didn't work for me, using the instructions on this page did: http://beginrescueend.com/rvm/install/ [NP]
